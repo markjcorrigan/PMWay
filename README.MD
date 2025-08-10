@@ -1,3 +1,5 @@
+Raison de etre:  I'm usingTallStarter for Laravel 12 Livewire Starter Kit from mortenebak. Into this I am incorporating a blog I found somewhere called Laravel 11 Portfolio Website. Thank you for original working code (zip attached).  I will have to make substantial changes to incorporate this into Livewire + my original Bootstrap ver 3+4 + Twig PMWay web (linked here) is being added as well.  Proving to be a good Livewire and Laravel 12 (+tall starter) learning exercise. While busy I have finally figured out the Spatie permissions which have been incorporated into tallstarter.  
+
 Tallstarter - A Laravel Livewire Starter Kit
 Latest Version on Packagist Project Status: Active – The project has reached a stable, usable state and is being actively developed. GitHub last commit GitHub Sponsors
 
