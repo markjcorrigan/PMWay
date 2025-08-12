@@ -81,45 +81,66 @@
     <!-- Dropdown Menu -->
     <nav class="flex items-center justify-end gap-4">
     <div class="relative">
-        <flux:button variant="primary" class="custom-button dropdown-toggle py-2 px-3 hover:bg-gray-800 flex items-center gap-4 rounded" title="">
-            {{--        <button class="dropdown-toggle py-2 px-3 hover:bg-gray-800 flex items-center gap-2 text-white rounded">--}}
-            <span class="pointer-events-none">About </span>
-            <svg class="w-3 h-3 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <title>chevron-down</title>
-                <g fill="none">
-                    <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-            </svg>
-        </flux:button>
-        <div class="dropdown-menu absolute hidden bg-gray-900 text-white rounded-b-lg pb-2 w-48 z-50">
 
 
-            @guest
 
 
-                <flux:navbar.item class="text-white" style="color: white  !important"  href="{{ route('portfolio') }}" :current="request()->routeIs('portfolio')">
-                    Portfolio
-                </flux:navbar.item>
+        <flux:dropdown>
 
-                <flux:navbar.item class="text-white" style="color: white  !important"  href="{{ route('pmwayguest') }}" :current="request()->routeIs('pmwayguest')"> PMWay </flux:navbar.item>
-                <flux:navbar.item class="text-white" style="color: white  !important"  href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
-                <flux:navbar.item class="text-white" style="color: white  !important"  href="{{ route('contact') }}" :current="request()->routeIs('contact')">
-                    Contact </flux:navbar.item>
-            @endguest
-            @auth
-                <flux:navbar.item class="text-white" style="color: white  !important"  href="{{ route('pmwayauth') }}" :current="request()->routeIs('pmwayauth')"> PMWay </flux:navbar.item>
-                <flux:navbar.item class="text-white" style="color: white  !important"  href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
-{{--                <flux:navbar.item class="text-black" style="color: black" href="{{ route('portfoliodash') }}" :current="request()->routeIs('portfoliodash')">Portfolio--}}
-{{--                    <i class="fa-duotone fa-truck" style="font-size: 30px !important; --fa-primary-color: #3498db; --fa-secondary-color: #f1c40f; --fa-primary-opacity: 1; --fa-secondary-opacity: 1;"></i>--}}
-{{--                </flux:navbar.item>--}}
+        <flux:button variant="primary" icon:trailing="chevron-down">About</flux:button>
+
+            <flux:menu class="!bg-gray-800">
 
 
-            @endauth
-            <!-- Other links -->
-        </div>
-        <flux:button variant="primary" id="refresh-button" class="custom-button dropdown-toggle py-2 px-3 hover:bg-gray-800 flex items-center gap-4 rounded" title="On landing here if About menu is stuck click here to wake it up">
-            <i class="fas fa-redo"></i>
-        </flux:button>
+            {{--                <flux:menu.item icon="plus">New post</flux:menu.item>--}}
+                @guest
+
+
+                    <flux:navbar.item class="text-black"   href="{{ route('portfolio') }}" :current="request()->routeIs('portfolio')">
+                        Portfolio
+                    </flux:navbar.item>
+
+                    <flux:navbar.item class="text-black"   href="{{ route('pmwayguest') }}" :current="request()->routeIs('pmwayguest')"> PMWay </flux:navbar.item>
+                    <flux:navbar.item class="text-black"   href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
+                    <flux:navbar.item class="text-black"   href="{{ route('contact') }}" :current="request()->routeIs('contact')">
+                        Contact </flux:navbar.item>
+                @endguest
+                @auth
+                    <flux:navbar.item class="text-black"   href="{{ route('pmwayauth') }}" :current="request()->routeIs('pmwayauth')"> PMWay </flux:navbar.item>
+                    <flux:navbar.item class="text-black"   href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
+                    {{--                <flux:navbar.item class="text-black" style="color: black" href="{{ route('portfoliodash') }}" :current="request()->routeIs('portfoliodash')">Portfolio--}}
+                    {{--                    <i class="fa-duotone fa-truck" style="font-size: 30px !important; --fa-primary-color: #3498db; --fa-secondary-color: #f1c40f; --fa-primary-opacity: 1; --fa-secondary-opacity: 1;"></i>--}}
+                    {{--                </flux:navbar.item>--}}
+
+
+                @endauth
+
+                <flux:menu.separator />
+
+{{--                <flux:menu.submenu heading="Sort by">--}}
+{{--                    <flux:menu.radio.group>--}}
+{{--                        <flux:menu.radio checked>Name</flux:menu.radio>--}}
+{{--                        <flux:menu.radio>Date</flux:menu.radio>--}}
+{{--                        <flux:menu.radio>Popularity</flux:menu.radio>--}}
+{{--                    </flux:menu.radio.group>--}}
+{{--                </flux:menu.submenu>--}}
+
+{{--                <flux:menu.submenu heading="Filter">--}}
+{{--                    <flux:menu.checkbox checked>Draft</flux:menu.checkbox>--}}
+{{--                    <flux:menu.checkbox checked>Published</flux:menu.checkbox>--}}
+{{--                    <flux:menu.checkbox>Archived</flux:menu.checkbox>--}}
+{{--                </flux:menu.submenu>--}}
+
+{{--                <flux:menu.separator />--}}
+
+{{--                <flux:menu.item variant="danger" icon="trash">Delete</flux:menu.item>--}}
+            </flux:menu>
+        </flux:dropdown>
+
+
+
+
+
     </div>
     </nav>
     <flux:spacer/>
@@ -271,46 +292,6 @@
 
 
 
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Select all dropdown toggle buttons
-        const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
-
-        dropdownToggles.forEach((toggle) => {
-            toggle.addEventListener("click", () => {
-                // Find the next sibling element which is the dropdown menu
-                const dropdownMenu = toggle.nextElementSibling
-
-                // Toggle the 'hidden' class to show or hide the dropdown menu
-                if (dropdownMenu.classList.contains("hidden")) {
-                    // Hide any open dropdown menus before showing the new one
-                    document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-                        menu.classList.add("hidden")
-                    })
-                    dropdownMenu.classList.remove("hidden")
-                } else {
-                    dropdownMenu.classList.add("hidden")
-                }
-            })
-        })
-
-        // Optional: Clicking outside of an open dropdown menu closes it
-        window.addEventListener("click", (event) => {
-            if (!event.target.matches(".dropdown-toggle") && !event.target.closest(".dropdown-menu")) {
-                document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-                    menu.classList.add("hidden")
-                })
-            }
-        })
-    })
-
-</script>
-<script>
-    document.getElementById("refresh-button").addEventListener("click", function() {
-        window.location.reload();
-    });
-</script>
 
 
 @fluxScripts
