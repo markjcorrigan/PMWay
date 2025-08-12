@@ -77,9 +77,9 @@ class FrontendController extends Controller
 
 
 //Below from source code
-    public function BlogDetails($slug)
+    public function BlogDetails($id)
     {
-        $post = BlogPost::where('post_slug', $slug)->first();
+        $post = BlogPost::where('id', $id)->first();
         if (!$post) {
             abort(404);
         }
@@ -155,4 +155,3 @@ class FrontendController extends Controller
 
 
 }
-

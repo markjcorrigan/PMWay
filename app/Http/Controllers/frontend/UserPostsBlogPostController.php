@@ -96,19 +96,4 @@ class UserPostsBlogPostController extends Controller
 
 
 
-
-
-
-//    public function firstBlog($id)
-//    {
-//        $post = BlogPost::where('post_slug', $slug)->first();
-//        $rposts =  BlogPost::Latest()->limit(3)->get();
-////        return view('frontend.blog.post_details', compact('post', 'rposts'));
-////        $post = BlogPost::find($id);
-//        return view('frontend.blog.post_details', compact('post', 'rposts'));
-////        return view('frontend.blog.post_details', compact('post'));
-//    }
-
-
-
 }

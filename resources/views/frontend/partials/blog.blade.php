@@ -1,3 +1,56 @@
+<style>
+
+    /*<!--NB This is the top 6 blogs page-->*/
+    .btn.tj-btn-primary {
+        position: relative;
+    }
+
+    .btn.tj-btn-primary::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px; /* Changed from 2px to 1px */
+        bottom: 0;
+        left: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn.tj-btn-primary:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+
+</style>
+
+<!--Buttons to home and forward to post detail-->
+<!-- START: Breadcrumb Area -->
+<section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}" data-bg-color="#140C1C">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <div class="breadcrumb_content d-inline-flex flex-column align-items-center">
+                    {{--                                     <h2 class="title wow fadeInUp" data-wow-delay=".3s">{{ $post->post_title }}</h2><br><br>--}}
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
+                             </span>
+                        <span class="header-button ms-3">
+                            <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>
+                        </span>&nbsp;&nbsp;&nbsp;
+                        <i class="far fa-long-arrow-right"></i>&nbsp;&nbsp;&nbsp;
+                        <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
+                             </span>
+                        <span class="header-button ms-3">
+                            <a href="{{ url('/post/details/1') }}" class="btn tj-btn-primary">List of Posts</a>
+                        </span>&nbsp;&nbsp;&nbsp;
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="blog-section" id="blog-section">
     <style>
         .btn.tj-btn-primary {
@@ -31,17 +84,18 @@
 
 
 
-                <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">6 latest blogs</h2>
+
+                <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">6 latest posts</h2>
                  <br><br>
                  <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
                              </span>
-                 <span class="header-button ms-3">
-                            <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>
-                        </span>&nbsp;&nbsp;&nbsp;
-                 <i class="far fa-long-arrow-right"></i>
-                 <span class="header-button ms-3">
-                            <a href="{{ route('first.post') }}" class="btn tj-btn-primary">Blog Details</a>
-                        </span>&nbsp;&nbsp;&nbsp;
+{{--                 <span class="header-button ms-3">--}}
+{{--                            <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>--}}
+{{--                        </span>&nbsp;&nbsp;&nbsp;--}}
+{{--                 <i class="far fa-long-arrow-right"></i>--}}
+{{--                 <span class="header-button ms-3">--}}
+{{--                            <a href="{{ route('first.post') }}" class="btn tj-btn-primary">Blog Details</a>--}}
+{{--                        </span>&nbsp;&nbsp;&nbsp;--}}
                 <p class="wow fadeInUp" data-wow-delay=".4s">
                     @auth
                         <span class="header-button ms-3">
@@ -70,7 +124,7 @@
                <div class="col-lg-4 col-md-6">
                   <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
                      <div class="blog-thumb">
-                        <a href="/post/details/{{ $post->post_slug }}">
+                        <a href="/post/details/{{ $post->id }}">
                            <img src="{{asset($post->photo)}}" alt="" />
                         </a>
 {{--                        <a href="#" class="category">Tutorial</a>--}}
@@ -83,7 +137,7 @@
                               <li><i class="fa-light fa-comments"></i> <a href="#">Comment ({{ count($comments) }})</a></li>
                            </ul>
                         </div>
-                        <h3 class="blog-title"><a href="/post/details/{{ $post->post_slug }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
+                        <h3 class="blog-title"><a href="/post/details/{{ $post->id }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
                      </div>
                   </div>
                </div>

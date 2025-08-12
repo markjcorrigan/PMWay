@@ -12,6 +12,13 @@ class Home extends Component
 {
     public $siteSettings;
 
+    public $showCollapse = false;
+
+    public function toggleCollapse()
+    {
+        $this->showCollapse = !$this->showCollapse;
+    }
+
     public function mount()
     {
         $this->siteSettings = SiteSettings::first(); // or SiteSettings::all() depending on your needs

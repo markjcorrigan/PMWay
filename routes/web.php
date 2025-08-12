@@ -114,6 +114,7 @@ Route::get('/about', About::class);
 Route::get('/accelerate', \App\Livewire\Accelerate::class);
 
 
+Route::get('/lwsearch', \App\Livewire\LWSearch::class);
 
 
 
@@ -127,7 +128,9 @@ Route::post('/forcelogout', [AuthenticatedSessionController::class, 'destroy'])
 Route::get('/portfoliodash', [AdminController::class, 'PortfolioDash'])->name('portfoliodash')->middleware(['auth', 'verified', 'permission:portfolio dash']);
 Route::get('/blog', [FrontendController::class, 'blog'])->name('blog');
 Route::get('/portfolio', [FrontendController::class, 'portfolio'])->name('portfolio');
-Route::get('/post/details/{slug}', [FrontendController::class, 'BlogDetails']);
+//Route::get('/post/details/{slug}', [FrontendController::class, 'BlogDetails']);
+Route::get('/post/details/{id}', [FrontendController::class, 'BlogDetails']);
+
 Route::post('store-comment', [FrontendController::class, 'StoreComment'])->name('store.comment');
 Route::post('store-contact-message', [FrontendController::class, 'StoreContactMessage'])->name('store.contact.message');
 

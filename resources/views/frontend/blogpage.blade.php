@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+<!--Top 6 posts-->
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8" />
    <meta http-equiv="x-ua-compatible" content="ie=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <meta name="description" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-   <!-- Site Title -->
+
+    <!-- Site Title -->
    <title>{{ config('app.name') }} </title>
 
    <!-- Place favicon.ico in the root directory -->
@@ -113,7 +116,7 @@
    </main>
 
    <!-- FOOTER AREA START -->
-    @include('frontend.partials.footer')
+   <x-footer />
    <!-- FOOTER AREA END -->
 
    <!-- CSS here -->

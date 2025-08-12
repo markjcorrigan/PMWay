@@ -5,8 +5,10 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <meta name="description" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-   <!-- Site Title -->
+
+    <!-- Site Title -->
    <title>{{ config('app.name') }} </title>
 
    <!-- Place favicon.ico in the root directory -->
@@ -101,10 +103,10 @@
                         <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
                              </span>
                                <span class="header-button ms-3">
-                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Blog Listing</a>
+                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">6 latest posts</a>
                         </span>&nbsp;&nbsp;&nbsp;
                             <i class="far fa-long-arrow-left"></i>&nbsp;&nbsp;&nbsp;
-                            <span class="current-item">Click Blog Listing to go back</span>
+                            <span class="current-item">Click to exit Blog</span>
 
                            </div>
                        </div>
@@ -287,8 +289,21 @@
                 </div>
              </div>
           </div>
+
            <div class="col-lg-4">
                <div class="tj_main_sidebar">
+                   <!--Two ways of searching:  Livewire-->
+
+                   <div class="sidebar_widget widget_search wow fadeInUp" data-wow-delay=".3s">
+                       <div class="tj-widget__search form_group">
+                          @livewire('lwsearch')
+                       </div>
+                   </div>
+
+
+
+
+                   <!--Two ways of searching:  Traditional came with blog-->
                    <div class="sidebar_widget widget_search wow fadeInUp" data-wow-delay=".3s">
                        <div class="tj-widget__search form_group">
                            <form class="search-form" action="{{ route('usersearch') }}" method="get">
@@ -299,7 +314,7 @@
                    </div>
                    <div class="sidebar_widget tj_recent_posts wow fadeInUp" data-wow-delay=".3s">
                        <div class="widget_title">
-                           <h3 class="title">Recent post</h3>
+                           <h3 class="title">Recent posts</h3>
                        </div>
                        <ul>
                            @foreach ($rposts as $rpost)
@@ -402,7 +417,7 @@
    </main>
 
    <!-- FOOTER AREA START -->
-    @include('frontend.partials.footer')
+<x-footer />
    <!-- FOOTER AREA END -->
 
    <!-- CSS here -->

@@ -5,6 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <!-- Site Title -->
     <title>{{ config('app.name') }} </title>
@@ -97,7 +99,7 @@
                     <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
                              </span>
                     <span class="header-button ms-3">
-                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Blog</a>
+                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">List of Posts</a>
                         </span>&nbsp;&nbsp;&nbsp;
 
                 </div>
@@ -128,7 +130,7 @@
                                         <li><i class="fa-light fa-comments"></i> <a href="#">Comment ({{ count($comments ?? []) }})</a></li>
                                     </ul>
                                 </div>
-                                <h3 class="blog-title"><a href="/post/details/{{ $post->post_slug }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
+                                <h3 class="blog-title"><a href="/post/details/{{ $post->id }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
                             </div>
                         </div>
                     @endforeach
@@ -180,7 +182,7 @@
 </main>
 
 <!-- FOOTER AREA START -->
-@include('frontend.partials.footer')
+<x-footer />
 <!-- FOOTER AREA END -->
 
 <!-- CSS here -->
