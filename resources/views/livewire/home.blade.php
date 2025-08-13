@@ -10,11 +10,7 @@
             <title>Pin test</title>
 
         <!--BODY-->
-            <div class="container">
-                <div class="absolute top-0 right-[75px] p-2">
-                    <button id="refresh-button" class="bg-gray-100 hover:bg-gray-300 text-gray-500 text-xs py-1 px-2 rounded" title="On landing here if About menu is stuck click here to wake it up"><i class="fad-solid fa-face-sleeping"></i></button>
-                </div>
-            </div>
+
 
 
 

@@ -72,6 +72,13 @@
 {{--</svg>--}}
         </a>
     <div class="flex items-center gap-2">
+        @auth
+        <flux:navbar class="-mb-px max-lg:hidden">
+            <flux:navbar.item class="text-white" style="color: white  !important"   href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')">
+                Dashboard
+            </flux:navbar.item>
+        </flux:navbar>
+        @endauth
 
 
 
