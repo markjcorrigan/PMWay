@@ -87,9 +87,9 @@
 
         <flux:dropdown>
 
-        <flux:button variant="primary" icon:trailing="chevron-down">About</flux:button>
+        <flux:button variant="primary" icon:trailing="chevron-down">Menu</flux:button>
 
-            <flux:menu class="!bg-gray-800">
+            <flux:menu class="!bg-gray-900">
 
 
             {{--                <flux:menu.item icon="plus">New post</flux:menu.item>--}}
