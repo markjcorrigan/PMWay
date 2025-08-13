@@ -96,19 +96,19 @@
                 @guest
 
 
-                    <flux:navbar.item class="text-black"   href="{{ route('portfolio') }}" :current="request()->routeIs('portfolio')">
+                    <flux:navbar.item class="text-white" style="color: white  !important"    href="{{ route('portfolio') }}" :current="request()->routeIs('portfolio')">
                         Portfolio
                     </flux:navbar.item>
 
-                    <flux:navbar.item class="text-black"   href="{{ route('pmwayguest') }}" :current="request()->routeIs('pmwayguest')"> PMWay </flux:navbar.item>
-                    <flux:navbar.item class="text-black"   href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
-                    <flux:navbar.item class="text-black"   href="{{ route('contact') }}" :current="request()->routeIs('contact')">
+                    <flux:navbar.item class="text-white" style="color: white  !important"     href="{{ route('pmwayguest') }}" :current="request()->routeIs('pmwayguest')"> PMWay </flux:navbar.item>
+                    <flux:navbar.item class="text-white" style="color: white  !important"    href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
+                    <flux:navbar.item class="text-white" style="color: white  !important"    href="{{ route('contact') }}" :current="request()->routeIs('contact')">
                         Contact </flux:navbar.item>
                 @endguest
                 @auth
-                    <flux:navbar.item class="text-black"   href="{{ route('pmwayauth') }}" :current="request()->routeIs('pmwayauth')"> PMWay </flux:navbar.item>
-                    <flux:navbar.item class="text-black"   href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
-                    {{--                <flux:navbar.item class="text-black" style="color: black" href="{{ route('portfoliodash') }}" :current="request()->routeIs('portfoliodash')">Portfolio--}}
+                    <flux:navbar.item class="text-white" style="color: white  !important"    href="{{ route('pmwayauth') }}" :current="request()->routeIs('pmwayauth')"> PMWay </flux:navbar.item>
+                    <flux:navbar.item class="text-white" style="color: white  !important"    href="{{ route('blog') }}" :current="request()->routeIs('blog')"> Blog </flux:navbar.item>
+                    {{--                <flux:navbar.item class="text-white" style="color: black" href="{{ route('portfoliodash') }}" :current="request()->routeIs('portfoliodash')">Portfolio--}}
                     {{--                    <i class="fa-duotone fa-truck" style="font-size: 30px !important; --fa-primary-color: #3498db; --fa-secondary-color: #f1c40f; --fa-primary-opacity: 1; --fa-secondary-opacity: 1;"></i>--}}
                     {{--                </flux:navbar.item>--}}
 

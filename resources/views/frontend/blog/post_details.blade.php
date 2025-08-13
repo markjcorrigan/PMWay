@@ -97,23 +97,20 @@
            <div class="container">
                <div class="row justify-content-center">
                    <div class="col text-center">
-                       <div class="breadcrumb_content d-inline-flex flex-column align-items-center">
+                       <div class="breadcrumb_content d-inline-flex flex-column align-items-center w-100">
                            <h2 class="title wow fadeInUp" data-wow-delay=".3s">{{ $post->post_title }}</h2><br><br>
-                           <div class="d-flex justify-content-between align-items-center">
-                        <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
-                             </span>
-                               <span class="header-button ms-3">
-                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">6 latest posts</a>
-                        </span>&nbsp;&nbsp;&nbsp;
-                            <i class="far fa-long-arrow-left"></i>&nbsp;&nbsp;&nbsp;
-                            <span class="current-item">Click to exit Blog</span>
-
+                           <div class="d-flex justify-content-end w-100">
+                        <span class="header-button ms-auto">
+                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Back</a>
+                        </span>
                            </div>
                        </div>
                    </div>
                </div>
            </div>
        </section>
+
+
 
 
 
@@ -296,6 +293,7 @@
 
                    <div class="sidebar_widget widget_search wow fadeInUp" data-wow-delay=".3s">
                        <div class="tj-widget__search form_group">
+                           <p>List of search results:</p>
                           @livewire('lwsearch')
                        </div>
                    </div>
@@ -305,7 +303,9 @@
 
                    <!--Two ways of searching:  Traditional came with blog-->
                    <div class="sidebar_widget widget_search wow fadeInUp" data-wow-delay=".3s">
+                       <p>Cards of search results:</p>
                        <div class="tj-widget__search form_group">
+
                            <form class="search-form" action="{{ route('usersearch') }}" method="get">
                                <input type="search" id="search" name="search" placeholder="Search..." value="{{ request()->input('search') }}" />
                                <button class="search-btn" type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
@@ -331,7 +331,7 @@
                                            <span><i class="fa-light fa-comments"></i><a href="#"> ({{ count($comments) }})</a></span>
                                        </div>
                                        <h4 class="recent-post_title">
-                                           <a href="/post/details/{{ $rpost->post_slug }}">{{ Str::limit($rpost->post_title, 30) }}</a>
+                                           <a href="/post/details/{{ $rpost->id }}">{{ Str::limit($rpost->post_title, 30) }}</a>
                                        </h4>
                                    </div>
                                </li>
@@ -408,7 +408,6 @@
 {{--                   </div>--}}
                 </div>
              </div>
-          </div>
 
  </section>
  <!-- END: Blog Section -->

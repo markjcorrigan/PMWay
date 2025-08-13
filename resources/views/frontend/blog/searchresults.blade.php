@@ -110,27 +110,28 @@
 <!-- END: Breadcrumb Area -->
 
 <!-- START: Blog Section -->
-<section class="full-width tj-post-details__area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
+    <section class="full-width tj-post-details__area">
+        <div class="container">
+            <div class="row">
                 @if ($posts->isNotEmpty())
                     @foreach ($posts as $post)
                         @php $comments = App\Models\Comment::where('post_id', $post->id)->where('status', 1)->get(); @endphp
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
-                            <div class="blog-thumb">
-                                <a href="/post/details/{{ $post->post_slug }}">
-                                    <img src="{{ asset($post->photo) }}" alt="" />
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <ul class="ul-reset">
-                                        <li><i class="fa-light fa-calendar-days"></i> {{ $post->created_at->format('D M, Y') }} </li>
-                                        <li><i class="fa-light fa-comments"></i> <a href="#">Comment ({{ count($comments ?? []) }})</a></li>
-                                    </ul>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
+                                <div class="blog-thumb">
+                                    <a href="/post/details/{{ $post->id }}">
+                                        <img src="{{asset($post->photo)}}" alt="" />
+                                    </a>
                                 </div>
-                                <h3 class="blog-title"><a href="/post/details/{{ $post->id }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <ul class="ul-reset">
+                                            <li><i class="fa-light fa-calendar-days"></i> {{ $post->created_at->format('D M, Y')}} </li>
+                                            <li><i class="fa-light fa-comments"></i> <a href="#">Comment ({{ count($comments) }})</a></li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="blog-title"><a href="/post/details/{{ $post->id }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
+                                </div>
                             </div>
                         </div>
                     @endforeach
@@ -139,41 +140,9 @@
                     <p>No Post found!! </p>
                 @endif
             </div>
-            <div class="col-lg-4">
-                <div class="tj_main_sidebar">
-                    <div class="sidebar_widget tj_recent_posts wow fadeInUp" data-wow-delay=".3s">
-                        <div class="widget_title">
-                            <h3 class="title">Recent post</h3>
-                        </div>
-                        <ul>
-                            @foreach ($rposts as $rpost)
-                                @php $comments = App\Models\Comment::where('post_id', $rpost->id)->where('status', 1)->get(); @endphp
-                                <li>
-                                    <div class="recent-post_thumb">
-                                        <a href="/post/details/{{ $rpost->post_slug }}">
-                                            <img src="{{ asset($rpost->photo) }}" alt="" />
-                                        </a>
-                                    </div>
-                                    <div class="recent-post_content">
-                                        <div class="tj-post__meta entry-meta">
-                                            <span><i class="fa-light fa-calendar-days"></i> {{ $rpost->created_at->format('M, Y') }} </span>
-                                            <span><i class="fa-light fa-comments"></i><a href="#"> ({{ count($comments) }})</a></span>
-                                        </div>
-                                        <h4 class="recent-post_title">
-                                            <a href="/post/details/{{ $rpost->post_slug }}">{{ Str::limit($rpost->post_title,30)}}</a>
-
-                                            <h4 class="recent-post_title">
-                                                <a href="/post/details/{{ $rpost->post_slug }}">{{ Str::limit($rpost->post_title, 30) }}</a>
-                                            </h4>
-                                    </div>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
-</section>
+    </section>
+
 <!-- END: Blog Section -->
 
 <!-- END: Blog Section -->

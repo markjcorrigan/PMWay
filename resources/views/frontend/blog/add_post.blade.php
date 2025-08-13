@@ -5,6 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Site Title -->
     <title>{{ config('app.name') }} </title>
@@ -68,30 +69,23 @@
 <main class="site-content" id="content">
 
     <!-- START: Breadcrumb Area -->
-    <section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}"
-             data-bg-color="#140C1C">
+
+    <section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}" data-bg-color="#140C1C">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="breadcrumb_content d-flex flex-column align-items-center">
-{{--                        <h2 class="title wow fadeInUp" data-wow-delay=".3s" style="text-align: center">{{ $post->post_title }}</h2>--}}
+                    <div class="breadcrumb_content d-flex flex-column align-items-end">
                         <div class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
-{{--                            <span><a href="/">Home</a></span>--}}
-{{--                            <i class="far fa-long-arrow-right"></i>--}}
-{{--                            <span class="current-item">Blog Details</span>--}}
-                            <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
-                             </span>
-                            <span class="header-button ms-3">
-                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Blog</a>
-                        </span>&nbsp;&nbsp;&nbsp;
-{{--                            <i class="far fa-long-arrow-right"></i>&nbsp;&nbsp;&nbsp;--}}
-{{--                            <span class="current-item">Blog Details</span>--}}
+                        <span class="header-button ms-3">
+                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Back</a>
+                        </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- END: Breadcrumb Area -->
 
     <!-- START: Blog Section -->
@@ -157,11 +151,12 @@
             </div>
         </div>
     </div>
+        </div>
 
 </main>
 
 <!-- FOOTER AREA START -->
-@include('frontend.partials.footer')
+<x-footer />
 <!-- FOOTER AREA END -->
 
 <!-- CSS here -->
@@ -217,5 +212,18 @@
     }
     @endif
 </script>
+<script>
+    $(document).ready(function (){
+        $('#Image').on('change', function(e){
+            var reader = new FileReader();
+            reader.onload = function(e){
+                $('#ShowImage').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(e.target.files['0']);
+        });
+    })
+</script>
+
+
 </body>
 </html>

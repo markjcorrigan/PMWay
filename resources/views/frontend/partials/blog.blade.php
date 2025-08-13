@@ -28,29 +28,21 @@
 <!-- START: Breadcrumb Area -->
 <section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}" data-bg-color="#140C1C">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col text-center">
-                <div class="breadcrumb_content d-inline-flex flex-column align-items-center">
-                    {{--                                     <h2 class="title wow fadeInUp" data-wow-delay=".3s">{{ $post->post_title }}</h2><br><br>--}}
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
-                             </span>
-                        <span class="header-button ms-3">
-                            <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>
-                        </span>&nbsp;&nbsp;&nbsp;
-                        <i class="far fa-long-arrow-right"></i>&nbsp;&nbsp;&nbsp;
-                        <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
-                             </span>
-                        <span class="header-button ms-3">
-                            <a href="{{ url('/post/details/1') }}" class="btn tj-btn-primary">List of Posts</a>
-                        </span>&nbsp;&nbsp;&nbsp;
-
-                    </div>
+        <div class="row justify-content-end">
+            <div class="col-auto">
+                <div class="d-flex justify-content-end align-items-center">
+                    <span class="header-button me-3">
+                        <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>
+                    </span>
+                    <span class="header-button">
+                        <a href="{{ url('/post/details/1') }}" class="btn tj-btn-primary">List of Posts</a>
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="blog-section" id="blog-section">
     <style>
         .btn.tj-btn-primary {
