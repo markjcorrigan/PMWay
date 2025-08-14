@@ -305,7 +305,7 @@
 
                 </tbody>
         </table>
-        <br class="">
+
 
 {{--        <p class="text-lg leading-relaxed">Let's now look at the purpose of each management practice in 2 levels below.<br class="">--}}
 {{--            The first level (linked to from the above list) gives a quick purpose summary--}}
@@ -325,100 +325,100 @@
 
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="architecture" class=""></a>1. Architecture management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="architecture" class=""></a>1. Architecture management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#architecturemd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To provide an understanding of all the different elements that make up an organization and how those elements interrelate, enabling the organization to effectively achieve its current and future objectives. It provides the principles, standards, and tools that enable an organization to manage complex change in a structured and agile way.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="continualimprovement" class=""></a>2. Continual improvement <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="continualimprovement" class=""></a>2. Continual improvement
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#continualimprovementmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To align the organization's practices and services with changing business needs through the ongoing identification and improvement of services, service components, practices, or any element involved in the efficient and effective management of products and services.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="infosecman" class=""></a>3. Information security management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="infosecman" class=""></a>3. Information security management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#infosecmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To protect the information needed by the organization to conduct its business. This includes understanding and managing risks to the confidentiality, integrity, and availability of information, as well as other aspects of information security such as authentication and non-repudiation.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="knowman" class=""></a>4. Knowledge management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="knowman" class=""></a>4. Knowledge management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#knowmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To maintain and improve the effective, efficient, and convenient use of information and knowledge across the organization.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="measureandrep" class=""></a>5. Measurement and reporting <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="measureandrep" class=""></a>5. Measurement and reporting
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#measureandrepmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To support good decision-making and continual improvement by decreasing the levels of uncertainty. This is achieved through the collection of relevant data on various managed objects and the valid assessment of this data in an appropriate context.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="orgchangeman" class=""></a>6. Organizational change management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="orgchangeman" class=""></a>6. Organizational change management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#orgchangemanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that changes in an organization are smoothly and successfully implemented, and that lasting benefits are achieved by managing the human aspects of the changes.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="portfolioman" class=""></a>7. Portfolio management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="portfolioman" class=""></a>7. Portfolio management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#portfoliomanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that the organization has the right mix of programs, projects, products, and services to execute the organization's strategy within its funding and resource constraints.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="projman" class=""></a>8. Project management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="projman" class=""></a>8. Project management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#projmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that all projects in the organization are successfully delivered. This is achieved by planning, delegating, monitoring, and maintaining control of all aspects of a project, and keeping the motivation of the people involved.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="relman" class=""></a>9. Relationship management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="relman" class=""></a>9. Relationship management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#relmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To establish and nurture the links between the organization and its stakeholders at strategic and tactical levels. It includes the identification, analysis, monitoring, and continual improvement of relationships with and between stakeholders.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="riskman" class=""></a>10. Risk management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="riskman" class=""></a>10. Risk management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#riskmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that the organization understands and effectively handles risks. Managing risk is essential to ensuring the ongoing sustainability of an organization and creating value for its customers.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servfinman" class=""></a>11. Service financial management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servfinman" class=""></a>11. Service financial management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servfinmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To support the organization's strategies and plans for service management by ensuring that the organization's financial resources and investments are being used effectively.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="stratman" class=""></a>12. Strategy management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="stratman" class=""></a>12. Strategy management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#stratmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To formulate the goals of the organization and adopt the courses of action and allocation of resources necessary for achieving those goals. Strategy management establishes the organization's direction, focuses effort, defines or clarifies the organization's priorities, and provides consistency or guidance in response to the environment.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="supman" class=""></a>13. Supplier management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="supman" class=""></a>13. Supplier management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#supmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that the organization's suppliers and their performances are managed appropriately to support the seamless provision of quality products and services. This includes creating closer, more collaborative relationships with key suppliers to uncover and realize new value and reduce the risk of failure.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="workftalentman" class=""></a>14. Workforce and talent management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="workftalentman" class=""></a>14. Workforce and talent management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#workftalentmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that the organization has the right people with the appropriate skills and knowledge and in the correct roles to support its business objectives through planning, recruitment, onboarding, learning and development, performance measurement, and succession planning activities.</td>
             </tr>
@@ -431,119 +431,119 @@
 
             <tbody class="">
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300">15. <a name="availman" class=""></a>Availability management <br class=""> <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class=""><a href="#availmanmd" class="">More Detail</a></p></td>
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300">15. <a name="availman" class=""></a>Availability management <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class=""><a href="#availmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="py-3 pl-6">To ensure that IT services are available when needed, by understanding the needs of the business and designing and implementing services that meet those needs.</td>
             </tr>
 
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="buisanal" class=""></a>2. Business analysis <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="buisanal" class=""></a>16. Business analysis
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#buisanalmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To analyze a business or some element of it, define its associated needs, and recommend solutions to address these needs and/or solve a business problem, which must facilitate value creation for stakeholders.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="capperfman" class=""></a>3. Capacity and performance management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="capperfman" class=""></a>17. Capacity and performance management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#capperfmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that services achieve agreed and expected performance, satisfying current and future demand in a cost effective way.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="changecontrol" class=""></a>4. Change enablement (Change control) <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="changecontrol" class=""></a>18. Change enablement (Change control)
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#changecontrolmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To maximize the number of successful IT changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="incidentman" class=""></a>5. Incident management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="incidentman" class=""></a>19. Incident management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#incidentmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To minimize the negative impact of incidents by restoring normal service operation as quickly as possible.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="itassetman" class=""></a>6. IT asset management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="itassetman" class=""></a>20. IT asset management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#itassetmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To plan and manage the full lifecycle of all IT assets, to help the organization maximize value; control costs; manage risks; support decision-making about purchase; re-use, and retirement of assets; and meet regulatory and contractual requirements.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="monitorevent" class=""></a>7. Monitoring and event management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="monitorevent" class=""></a>21. Monitoring and event management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#monitoreventmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To systematically observe services and service components, and record and report selected changes of state identified as events, through identifying and prioritizing infrastructure, services, business processes, and information security events, and establishing the appropriate response to those events, including responding to conditions that could lead to potential faults or incidents.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="problemman" class=""></a>8. Problem management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="problemman" class=""></a>22. Problem management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#problemmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and known errors.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="releaseman" class=""></a>9. Release management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="releaseman" class=""></a>23. Release management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#releasemanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To make new and changed services and features available for use.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servcatman" class=""></a>10. Service catalogue management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servcatman" class=""></a>24. Service catalogue management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servcatmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To provide a single source of consistent information on all services and service offerings, and to ensure that it is available to the relevant audience.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servconfigman" class=""></a>11. Service configuration management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servconfigman" class=""></a>25. Service configuration management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servconfigmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that accurate and reliable information about the configuration of services, and the configuration items (CIs) that support them, is available when and where it is needed. This includes information on how CIs are configured and the relationships between them.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servcontman" class=""></a>12. Service continuity management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servcontman" class=""></a>26. Service continuity management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servcontmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that the availability and performance of a service is maintained at a sufficient level in the event of a disaster. The practice provides a framework for building organizational resilience, with the capability of producing an effective response that safeguards the interests of key stakeholders and the organization's reputation, brand, and value-creating activities.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servdesign" class=""></a>13. Service design <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servdesign" class=""></a>27. Service design
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servdesignmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To design products and services that are fit for purpose, fit for use, and that can be delivered by the organization and its ecosystem. This includes planning and organizing people, partners and suppliers, information, communication, technology, and practices for new or changed products and services, and the interaction between the organization and its customers.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servdesk" class=""></a>14. Service desk <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servdesk" class=""></a>28. Service desk
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servdeskmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To capture demand for incident resolution and service requests. It should also be the entry point and single point of contact for the service provider with all of its users.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="slaman" class=""></a>15. Service level management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="slaman" class=""></a>29. Service level management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#slamanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To set clear business-based targets for service performance, so that the delivery of a service can be properly assessed, monitored, and managed against these targets.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servreqman" class=""></a>16.   Service request management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servreqman" class=""></a>30.   Service request management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servreqmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To support the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="servvaltest" class=""></a>17. Service validation and testing <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="servvaltest" class=""></a>31. Service validation and testing
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#servvaltestmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that new or changed products and services meet defined requirements. The definition of service value is based on input from customers, business objectives, and regulatory requirements, and is documented as part of the value chain activity of design and transition. These inputs are used to establish measurable quality and performance indicators that support the definition of assurance criteria and testing requirements.</td>
             </tr>
@@ -560,40 +560,40 @@
                 <td width="393" valign="top" class=""><strong class="">Purpose</strong></td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="deployman" class=""></a>1. Deployment management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="deployman" class=""></a>32. Deployment management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#deploymanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To move new or changed hardware, software, documentation, processes, or any other component to live environments. It may also be involved in deploying components to other environments for testing or staging.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="infraplatman" class=""></a>2. Infrastructure and platform management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="infraplatman" class=""></a>33. Infrastructure and platform management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#infraplanmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To oversee the infrastructure and platforms used by an organization. When carried out properly, this practice enables the monitoring of technology solutions available to the organization, including the technology of external service providers.</td>
             </tr>
             <tr class="bg-gray-100 border-b border-gray-300">
-                <td width="223" valign="top" class=""><a name="softdevman" class=""></a>3. Software development and management <br class="">
-                    <br class="">
-                    <p class="text-lg leading-relaxed"><a href="#home" class="">Home</a><br class="">
+                <td width="223" valign="top" class="py-3 pl-6 border-r border-gray-300"><a name="softdevman" class=""></a>34. Software development and management
+
+                    <p class="text-lg leading-relaxed mb-0"><a href="#home" class="">Home</a><br class="">
                         <a href="#softdevmanmd" class="">More Detail</a></p></td>
                 <td width="393" valign="top" class="">To ensure that applications meet internal and external stakeholder needs, in terms of functionality, reliability, maintainability, compliance, and auditability.</td>
             </tr>
             </tbody>
         </table>
     </div>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h2 class=""><a name="gmp" class=""></a>General Management Practices</h2>
     <h3 class=""><a name="architecturemd" class=""></a>Architecture management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
     </p><h5 class="">Key message</h5>
     <p class="text-lg leading-relaxed">The purpose of the architecture management practice is to provide an understanding of all the different elements that make up an organization and how those elements interrelate, enabling the organization to effectively achieve its current and future objectives. It provides the principles, standards, and tools that enable an organization to manage complex change in a structured and Agile way.</p>
-    <p class="text-lg leading-relaxed">Just as the modern organization's environment and ecosystem have become more complex, so have its challenges. <br class="">
+    <p class="text-lg leading-relaxed">Just as the modern organization's environment and ecosystem have become more complex, so have its challenges.
         These include not only how to increase efficiency and automation, but also how to better manage the complexity of the environment and how to achieve organizational agility and resilience. Without the visibility and coordination made possible by a proper architecture management practice, an organization can become a labyrinth of third-party contracts, variant processes across different organizational silos, various products and services that have been needlessly customized for different customers, and a legacy infrastructure. The result is a complex landscape where any change becomes far more difficult to implement and introduces a much higher risk.</p>
     <p class="text-lg leading-relaxed">A complete architecture management practice should address all architecture domains: business, service, information, technology, and environment. For a smaller and less complex organization, the architect can develop a single integrated architecture.</p>
     <h5 class="text-lg font-medium leading-snug">Architecture types:</h5>
@@ -647,10 +647,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> The reference architectures are used continually as part of the operation, restoration, and maintenance of products and services.</p>
     <p class="text-lg leading-relaxed">Figure 5.1 Heat map of the contribution of architecture management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/architecturemanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image004.jpg') }}" alt="image004"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="continualimprovementmd" class=""></a>Continual improvement</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -671,10 +671,10 @@
         <li class="">coordinating improvement activities across the organization.</li>
     </ul>
     <p class="text-lg leading-relaxed">There are many methods, models, and techniques that can be employed for making improvements. Different types of improvement may call for different improvement methods. For example, some improvements may be best organized into a multi-phase project, while others may be more appropriate as a single quick effort.</p>
-    <p class="text-lg leading-relaxed">The ITIL service value system (SVS) includes the continual improvement model, which can be applied to any type of improvement, from high-level organizational changes to individual services and configuration items (CIs). <br class="">
+    <p class="text-lg leading-relaxed">The ITIL service value system (SVS) includes the continual improvement model, which can be applied to any type of improvement, from high-level organizational changes to individual services and configuration items (CIs).
         The model is below:</p>
     <img alt="" class="/* img-fluid not found */" src="{{ asset('/images/itilfour/continual.jpg') }}"><br class="">
-    <br class="">
+
     <p class="text-lg leading-relaxed">When assessing the current state, there are many techniques that can be employed, such as a strength, weakness, opportunity, and threat (SWOT) analysis, a balanced scorecard review, internal and external assessments and audits, or perhaps even a combination of several techniques. Organizations should develop competencies in methodologies and techniques that will meet their needs.</p>
     <p class="text-lg leading-relaxed">Approaches to continual improvement can be found in many places. Lean methods provide perspectives on the elimination of waste. Agile methods focus on making improvements incrementally at a cadence. DevOps methods work holistically and ensure that improvements are not only designed well, but applied effectively. Although there are a number of methods available, organizations should not try to formally commit to too many different approaches. It is a good idea to select a few key methods that are appropriate to the types of improvement the organization typically handles and to cultivate those methods. In this way, teams will have a shared understanding of how to work together on improvements to facilitate a greater amount of change at a quicker rate.</p>
     <p class="text-lg leading-relaxed">This does not mean, however, that the organization should not try new approaches or allow for innovation. Those in the organization with skills in alternative methods should be encouraged to apply them when it makes sense, and if this effort is successful, the alternative method may be added to the organization's repertoire.</p>
@@ -696,9 +696,9 @@
     <p class="text-lg leading-relaxed"><b class="">Engage, design and transition, obtain/build, and deliver and support</b> Each of these value chain activities is subject to continual improvement, and the continual improvement practice is applied to all of them.</p>
     <p class="text-lg leading-relaxed"><a class="">Figure 5.2 Heat map of the contribution of continual improvement to value chain activities.</a></p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/continualimprovement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image007.jpg') }}"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
     <h3 class=""><a name="infosecmanmd" class=""></a>Information Security Manaagement</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -741,10 +741,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Detection and correction of information security incidents must be an integral part of this value chain activity.</p>
     <p class="text-lg leading-relaxed">Figure 5.3 Heat map of the contribution of information security management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/informationsecuritymanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image011.jpg') }}" alt="image011"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="knowmanmd" class=""></a>Knowledge Management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -763,10 +763,10 @@
     <p class="text-lg leading-relaxed"><b class=""> Deliver and support</b> Ongoing value chain activity in this area benefits from knowledge management through re-use of solutions in standard situations and a better understanding of the context of non-standard situations that require analysis.</p>
     <p class="text-lg leading-relaxed">Figure 5.4 Heat map of the contribution of knowledge management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/knowledgemanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image017.jpg') }}" alt="image017"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="measureandrepmd" class=""></a>Measurement and reporting</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -794,10 +794,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Ongoing management of products and services is based on correct, up-to-date, and sufficient performance information.</p>
     <p class="text-lg leading-relaxed">Figure 5.5 Heat map of the contribution of measurement and reporting to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/measurementandreporting.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image026.jpg') }}" alt="image026"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="orgchangemanmd" class=""></a>Organizational change management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -847,7 +847,7 @@
             <td class=""><p class="text-lg leading-relaxed">Sustained improvement</p></td>
         </tr>
         </tbody></table>
-    <br class="">
+
     <p class="text-lg leading-relaxed">The activities of organizational change management interact with those of many other practices, particularly continual improvement and project management. Other practices with important links to organizational change management include measurement and reporting, workforce and talent management, and relationship management.</p>
     <p class="text-lg leading-relaxed">The various audiences affected by the change must be identified and their characteristics defined. Not all people will respond to the same messaging or be motivated by the same drivers. It is particularly important in organizational change management to take cultural differences into consideration, whether they are based on geography, nationality, corporate history, or other factors.</p>
     <p class="text-lg leading-relaxed">Unlike other practices, accountability for organizational change management cannot be transferred to an external supplier. Someone within the organization itself must be accountable for organizational change management, even if the execution of some or most of the organizational change management activities is delegated to other people or groups including suppliers. External expertise may, however, be sought to supplement the organizational change management capabilities of an organization. Sometimes organizations struggle with the key skillsets needed for organizational change management and can benefit from the support and guidance of an external supplier. Even if external help is used, the overall leadership support must still come from the organization itself.</p>
@@ -861,10 +861,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Organizational change management continues during live operations and support to ensure that the change has been adopted and is sustained.</p>
     <p class="text-lg leading-relaxed">Figure 5.6 Heat map of the contribution of organizational change management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/organizationalchangemenegement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image028.jpg') }}" alt="image028"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="portfoliomanmd" class=""></a>Portfolio management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -901,10 +901,10 @@
     <p class="text-lg leading-relaxed"><b class="">Design and transition, obtain/build, and deliver and support</b> Portfolio management is responsible for ensuring that products and services are clearly defined and linked to the achievement of business outcomes, so that these value chain activities are aligned with value.</p>
     <p class="text-lg leading-relaxed">Figure 5.7 Heat map of the contribution of portfolio management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/portfoliomanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image029.jpg') }}" alt="image029"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="projmanmd" class=""></a>Project management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -938,9 +938,9 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> The design, transition, and handover to internal or external service consumers for operational management needs to be well planned and executed to ensure that business as usual is not compromised. The project management practice ensures this happens.</p>
     <p class="text-lg leading-relaxed">Figure 5.8 Heat map of the contribution of project management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/projectmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image031.jpg') }}" alt="image031"></a></p><br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
     <h3 class=""><a name="relmanmd" class=""></a>Relationship management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -969,10 +969,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Relationship management is responsible for ensuring that a high level of customer satisfaction and a constructive relationship between the organization and its customers are established and maintained.</p>
     <p class="text-lg leading-relaxed">Figure 5.9 Heat map of the contribution of relationship management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/relationshipmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image035.jpg') }}" alt="image035"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="riskmanmd" class=""></a>Risk management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1044,10 +1044,10 @@
     <p class="text-lg leading-relaxed"><b class="">Obtain/build</b> Risk management should inform decisions about the obtaining or building of products, services, or service components.</p>
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Risk management helps to ensure that the ongoing delivery of products and services is maintained at the agreed level and that all events are managed according to the risks that they introduce.</p>
     <p class="text-lg leading-relaxed">Figure 5.10 Heat map of the contribution of risk management to value chain activities.</p>
-    <p class="text-lg leading-relaxed"><a href="/view-pdf/riskmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image037.jpg') }}" alt="image037"></a></p> <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+    <p class="text-lg leading-relaxed"><a href="/view-pdf/riskmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image037.jpg') }}" alt="image037"></a></p>
+
+
+
     <h3 class=""><a name="servfinmanmd" class=""></a>Service financial management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1084,10 +1084,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Ongoing operational costs are a significant part of the organization's expenditures. For commercial organizations, ongoing service delivery activities are also the source of income. Service financial management helps to ensure sufficient understanding of both. Charging (if applicable) supports the service provider and the service consumer in their relationships with billing and reporting.</p>
     <p class="text-lg leading-relaxed">Figure 5.11 Heat map of the contribution of service financial management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicefinancialmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image042.jpg') }}" alt="image042"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="stratmanmd" class=""></a>Strategy management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1121,10 +1121,10 @@
     <p class="text-lg leading-relaxed"><b class="">Design and transition, obtain/build, and deliver and support</b> Strategy management ensures the strategy is implemented through execution of the strategic plans in coordination with these activities. It also provides feedback to enable the measurement and evaluation of products and services during design and transition.</p>
     <p class="text-lg leading-relaxed">Figure 5.12 Heat map of the contribution of strategy management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/strategymanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image043.jpg') }}" alt="image043"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="supmanmd" class=""></a>Supplier management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1188,10 +1188,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Supplier performance for live services is managed by this practice to ensure that suppliers meet the terms, conditions, and targets of their contracts and agreements.</p>
     <p class="text-lg leading-relaxed">Figure 5.13 shows the contribution of supplier management to the service value chain, with the practice being involved in all value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/suppliermanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image044.jpg') }}" \="" alt="image044"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="workftalentmanmd" class=""></a>Workforce and talent management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1225,11 +1225,11 @@
         <li class=""><b class="">Learning and development</b> Targeted education and experiential learning opportunities using various formal and non-formal methods.</li>
         <li class=""><b class="">Mentoring and succession planning</b> Formal mentoring, engagement, and succession planning activities provided by leadership.</li>
     </ul>
-    <br class="">
+
     <p align="center" class=""><a name="bookmark514" class=""></a>Figure 5.14 Workforce and talent management activities.</p>
     <p align="center" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image052.png') }}"></p>
-    <br class="">
-    <br class="">
+
+
     <p class="text-lg leading-relaxed">Figure 5.15 shows the contribution of workforce and talent management to the
         service value chain, with the practice being involved in all value chain activities;
         however, it is a primary focus of plan and improve activities:</p>
@@ -1241,10 +1241,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Specific focus by talent management is given to knowledge, skills, and abilities related to customer service, performance management, and customer interactions and relationships.</p>
     <p class="text-lg leading-relaxed"><a name="bookmark515" class=""></a>Figure 5.15 Heat map of the contribution of workforce and talent management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/workforceandtalentmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image053.jpg') }}"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h2 class=""><a name="smp" class=""></a>Service management practices</h2>
     <h3 class=""><a name="availmanmd" class=""></a>Availability management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
@@ -1300,10 +1300,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> This activity includes measurement of availability and reacting to events which might affect the ability to meet availability targets.</p>
     <p class="text-lg leading-relaxed">Figure 5.16 Heat map of the contribution of availability management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/availabilitymanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image057.jpg') }}" alt="image057"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="buisanalmd" class=""></a>Business analysis</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1345,10 +1345,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Data from the ongoing delivery of a service can be part of business analysis activities when designing changes to the service, as well as when looking for opportunities for continual improvement.<br class="">
     </p>
     <p class="text-lg leading-relaxed">Figure 5.17 Heat map of the contribution of business analysis to value chain activities.</p>
-    <p class="text-lg leading-relaxed"><a href="/view-pdf/businessanalysis.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image059.jpg') }}" alt="image059"></a></p> <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+    <p class="text-lg leading-relaxed"><a href="/view-pdf/businessanalysis.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image059.jpg') }}" alt="image059"></a></p>
+
+
+
     <h3 class=""><a name="capperfmanmd" class=""></a>Capacity and performance management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1403,10 +1403,10 @@
     <p class="text-lg leading-relaxed"><b class="">Obtain/build</b> Capacity and performance management helps to ensure that components and services being obtained or built meet performance needs of the organization.</p>
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Services and service components are supported and tested by performance and capacity targets, metrics and measurement, and reporting targets and tools.</p>
     <p class="text-lg leading-relaxed">Figure 5.18 Heat map of the contribution of capacity and performance management to value chain activities.</p>
-    <p class="text-lg leading-relaxed"><a href="/view-pdf/capacityandperformancemanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image0518.jpg') }}" alt="image0518"></a></p> <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+    <p class="text-lg leading-relaxed"><a href="/view-pdf/capacityandperformancemanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image0518.jpg') }}" alt="image0518"></a></p>
+
+
+
     <h3 class=""><a name="changecontrolmd" class=""></a>Change enablement (Change control)</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1439,10 +1439,10 @@
             authorizing changes. </p>
         <p class="text-lg leading-relaxed">Figure 5.19 Heat map of the contribution of change enablement (change control) to value chain activities.</p>
     </a><p class="text-lg leading-relaxed"><a class=""></a><a href="/view-pdf/changeenablement.pdf" target="_blank" class=""><img alt="" class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image079.jpg') }}"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="incidentmanmd" class=""></a>Incident management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1469,7 +1469,7 @@
     <p class="text-lg leading-relaxed">Effective incident management often requires a high level of collaboration within and between teams. These teams may include the service desk, technical support, application support, and vendors. Collaboration can facilitate information-sharing and learning, as well as helping to solve the incident more efficiently and effectively.</p>
     <h5 class="text-lg font-medium leading-snug">Tip</h5>
     <p class="text-lg leading-relaxed">Some organizations use a technique called swarming to help manage incidents. This involves many different stakeholders working together initially, until it becomes clear which of them is best placed to continue and which can move on to other tasks.</p>
-    <p class="text-lg leading-relaxed">Third-party products and services that are used as components of a service require support agreements which align the obligations of the supplier with the commitments made by the service provider to customers. Incident management may require frequent interaction with these suppliers, and routine management of this aspect of supplier contracts is often part of the incident management practice. <br class="">
+    <p class="text-lg leading-relaxed">Third-party products and services that are used as components of a service require support agreements which align the obligations of the supplier with the commitments made by the service provider to customers. Incident management may require frequent interaction with these suppliers, and routine management of this aspect of supplier contracts is often part of the incident management practice.
         A supplier can also act as a service desk, logging and managing all incidents and escalating them to subject matter experts or other parties as required.</p>
     <p class="text-lg leading-relaxed">There should be a formal process for logging and managing incidents. This process does not usually include detailed procedures for how to diagnose, investigate, and resolve incidents, but can provide techniques for making investigation and diagnosis more efficient. There may be scripts for collecting information from users during initial contact, and this may lead directly to diagnosis and resolution of simple incidents. Investigation of more complicated incidents often requires knowledge and expertise, rather than procedural steps.</p>
     <p class="text-lg leading-relaxed">Dealing with incidents is possible in every value chain activity, though the most visible (due to effect on users) are incidents in an operational environment.</p>
@@ -1484,10 +1484,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Incident management makes a significant contribution to support. This value chain activity includes resolving incidents and problems.</p>
     <p class="text-lg leading-relaxed">Figure 5.20 Heat map of the contribution of incident management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/incidentmanagement.pdf" target="_blank" class=""><img alt="" class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image086.jpg') }}"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="itassetmanmd" class=""></a>IT asset management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1549,10 +1549,10 @@
     <p class="text-lg leading-relaxed">Figure 5.21 Heat map of the contribution of IT asset management to value chain activities.</p>
 
     <p class="text-lg leading-relaxed"><a href="/view-pdf/assetmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image087.jpg') }}" alt="image087"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="monitoreventmd" class=""></a>Monitoring and event management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1589,10 +1589,10 @@
     <p class="text-lg leading-relaxed"><b class="">Obtain/build</b> Monitoring and event management supports development environments, ensuring their transparency and manageability.</p>
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> The practice guides how the organization manages internal support of identified events, initiating other practices as appropriate.</p>
     <p class="text-lg leading-relaxed">Figure 5.22 Heat map of the contribution of monitoring and event management to value chain activities.</p>
-    <p class="text-lg leading-relaxed"><a href="/view-pdf/monitoringandeventmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image091.jpg') }}" alt="image091"></a></p> <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+    <p class="text-lg leading-relaxed"><a href="/view-pdf/monitoringandeventmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image091.jpg') }}" alt="image091"></a></p>
+
+
+
     <h3 class=""><a name="problemmanmd" class=""></a>Problem management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1657,10 +1657,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Problem management makes a significant contribution by preventing incident repetition and supporting timely incident resolution.</p>
     <p class="text-lg leading-relaxed">Figure 5.24 Heat map of the contribution of problem management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/problemmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image098.jpg') }}" alt="image098"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="releasemanmd" class=""></a>Release management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1676,7 +1676,7 @@
     </p>
     <table class="">
         <tbody class=""><tr class="bg-gray-100 border-b border-gray-300">
-            <td class=""><p class="text-lg leading-relaxed">Figure 5.25 below shows how release management is handled in a traditional/waterfall environment. <br class="">
+            <td class=""><p class="text-lg leading-relaxed">Figure 5.25 below shows how release management is handled in a traditional/waterfall environment.
                     In these environments release management and deployment may be combined and executed as a single process.</p>
                 <img alt="" class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image0991.png') }}">
                 <p class="text-lg leading-relaxed">Figure 5.25 above shows Release management in a traditional/waterfall environment.</p></td>
@@ -1710,10 +1710,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Releases may impact on delivery and support. Training, documentation, release notes, known errors, user guides, support scripts, etc. are provided by this practice to facilitate service restoration.</p>
     <p class="text-lg leading-relaxed">Figure 5.27 Heat map of the contribution of release management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/releasemanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivetwentyfive.jpg') }}" alt=""></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="servcatmanmd" class=""></a>Service catalogue management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1743,10 +1743,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> The service catalogue provides context for how the service will be delivered and supported, and publishes expectations related to agreements and performance.</p>
     <p class="text-lg leading-relaxed">Figure 5.28 Heat map of the contribution of service catalogue management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicecataloguemanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivetwentyeight.jpg') }}" alt="image105"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="servconfigmanmd" class=""></a>Service configuration management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1788,10 +1788,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Information on CIs is essential to support service restoration. Configuration information is used to support activities of the incident management and problem management practices.</p>
     <p class="text-lg leading-relaxed">Figure 5.30 Heat map of the contribution of service configuration management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/serviceconfigurationmanagement.pdf" target="_blank" class=""><img class="/* img not found */" src="{{ asset('/images/itilfour/imagefivethirty.jpg') }}" alt=""></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="servcontmanmd" class=""></a>Service continuity management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -1801,7 +1801,7 @@
     <p class="text-lg leading-relaxed">Each organization needs to understand what constitutes a disaster in its own context. Establishing what is meant by a disaster must be considered and defined prior to a trigger event at both an organizational and on a per-service level using a business impact analysis. The Business Continuity Institute defines a disaster as:</p>
     <table cellpadding="5" align="center" width="900" class="">
         <tbody class=""><tr class="bg-gray-100 border-b border-gray-300">
-            <td class=""><p class="text-lg leading-relaxed"><i class="">'...a sudden unplanned event that causes great damage or serious loss to an organization. <br class="">
+            <td class=""><p class="text-lg leading-relaxed"><i class="">'...a sudden unplanned event that causes great damage or serious loss to an organization.
                         It results in an organization failing to provide critical business functions for some predetermined minimum period of time.'</i></p></td>
         </tr>
         </tbody></table>
@@ -1854,7 +1854,7 @@
             <td class=""><p class="text-lg leading-relaxed">Communities</p></td>
         </tr>
         </tbody></table>
-    <br class="">
+
     <p class="text-lg leading-relaxed"><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/image113.jpg') }}" alt="image113"></p>
     <h5 class="text-lg font-medium leading-snug">Definitions</h5>
     <p class="text-lg leading-relaxed"><b class="">Recovery time objective (RTO)</b> The maximum acceptable period of time following a service disruption that can elapse before the lack of business functionality severely impacts the organization. This represents the maximum agreed time within which a product or an activity must be resumed, or resources must be recovered.</p>
@@ -1878,11 +1878,11 @@
     <p class="text-lg leading-relaxed"><b class="">Obtain/build</b> Service continuity management ensures that continuity is built into the organization's services and components, and that procured components and services meet the organization's continuity requirements.</p>
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Ongoing delivery, operations, and support are performed in accordance with continuity requirements and policies.</p>
     <p class="text-lg leading-relaxed">Figure 5.31 Heat map of the contribution of service continuity management to value chain activities.</p>
-    <br class="">
+
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicecontinuitymanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagethirtyone.jpg') }}" alt="image112"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
     <p class="text-lg leading-relaxed"></p>
     <h3 class=""><a name="servdesignmd" class=""></a>Service design</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
@@ -1966,10 +1966,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Service design manages the user's full journey, through operation, restoration, and maintenance of the service.</p>
     <p class="text-lg leading-relaxed">Figure 5.32 Heat map of the contribution of service design to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicedesign.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtytwo.jpg') }}" alt=""></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="servdeskmd" class=""></a>Service desk</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -2018,10 +2018,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> The service desk is the coordination point for managing incidents and service requests.</p>
     <p class="text-lg leading-relaxed">Figure 5.33 Heat map of the contribution of the service desk to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicedesk.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtythree.jpg') }}" alt=""></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="slamanmd" class=""></a>Service level management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -2104,10 +2104,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Service level management communicates service performance objectives to the operations and support teams and collects their feedback as an input for service improvement.</p>
     <p class="text-lg leading-relaxed">Figure 5.34 Heat map of the contribution of service level management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicelevelmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtyfour.jpg') }}" alt="image124"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="servreqmanmd" class=""></a>Service request management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -2122,7 +2122,7 @@
 
         <li class="">a request for a service delivery action (for example, providing a report or replacing a toner cartridge)</li>
         <li class="">a request for information (for example, how to create a document or what the hours of the office are)</li>
-        <li class="">a request for provision of a resource or service <br class="">
+        <li class="">a request for provision of a resource or service
             (for example, providing a phone or laptop to a user, or providing a virtual server for a development team)</li>
         <li class="">a request for access to a resource or service (for example, providing access to a file or folder)</li>
         <li class="">feedback, compliments, and complaints (for example, complaints about a new interface or compliments to a support team).</li>
@@ -2148,10 +2148,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> Service request management makes a significant contribution to normal service delivery. This activity of the value chain is mostly concerned with ensuring users continue to be productive, and sometimes depends heavily on fulfilment of their requests.</p>
     <p class="text-lg leading-relaxed">Figure 5.35 Heat map of the contribution of service request management to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicerequestmanagement.pdf" target="_blank" class=""><img alt="" class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtyfive.jpg') }}"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="servvaltestmd" class=""></a>Service validation and testing</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -2200,10 +2200,10 @@
     <p class="text-lg leading-relaxed">Figure 5.36 Heat map of the contribution of service validation and
         testing to value chain activities.</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/servicevalidationandtesting.pdf" target="_blank" class=""><img alt="" class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtysix.jpg') }}"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h2 class=""><a name="tmp" class=""></a>Technical Management Practices</h2>
     <h3 class=""><a name="deploymanmd" class=""></a>Deployment management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
@@ -2229,10 +2229,10 @@
     <p class="text-lg leading-relaxed"><b class="">Obtain/build</b> Changes can be deployed incrementally as part of this value chain activity. This is especially common in DevOps environments using a complete automated toolchain for continuous integration, delivery, and deployment.</p>
     <p class="text-lg leading-relaxed">Figure 5.37 Heat map of the contribution of deployment management to value chain activities</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/deploymentmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtyseven.jpg') }}" alt="image136"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="infraplanmanmd" class=""></a>Infrastructure and platform management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -2283,10 +2283,10 @@
     <p class="text-lg leading-relaxed"><b class="">Deliver and support</b> At the operational level, infrastructure and platform management supports ongoing maintenance of the services and the infrastructure, including any executions of patch management, backups, etc.</p>
     <p class="text-lg leading-relaxed">Figure 5.38 Heat map of the contribution of infrastructure and platform management to value chain activities</p>
     <p class="text-lg leading-relaxed"><a href="/view-pdf/infrastructureandplatformmanagement.pdf" target="_blank" class=""><img class="/* img-fluid not found */" src="{{ asset('/images/itilfour/imagefivethirtyeight.jpg') }}" alt="image136"></a></p>
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
     <h3 class=""><a name="softdevmanmd" class=""></a>Software development and management</h3>
     <p class="text-lg leading-relaxed"><a href="#home" class="">home</a>
     </p><p class="text-lg leading-relaxed">
@@ -2327,9 +2327,9 @@
 
 
     <!--BODY ENDS HERE-->
-    <br class="">
-    <br class="">
-    <br class="">
-    <br class="">
+
+
+
+
             <br>
 </section>
