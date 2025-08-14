@@ -13,23 +13,13 @@ use App\Http\Controllers\backend\SkillsController;
 use App\Http\Controllers\backend\TestimonialController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\frontend\FrontendController;
-//use App\Livewire\PmwayHome;
 use App\Http\Controllers\frontend\UserPostsBlogPostController;
-use App\Livewire\About;
+use App\Livewire\Pmway\Laws;
 use App\Livewire\PrivateOne;
-use App\Livewire\Laws;
-use App\Models\BlogPost;
 use Illuminate\Auth\Middleware\Authenticate;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Artisan;
-
-
-
-
-
-
-use Symfony\Component\HttpKernel\Exception\HttpException;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Route;
 
 
 Route::get('/optimize', function () {
@@ -109,9 +99,23 @@ Route::get('/fontawesome6/fontawesome6/pro/css/all.min.css', function () {
 Route::get('/', \App\Livewire\Home::class)->name('home');
 Route::get('/pmwayguest', [FrontendController::class, 'pmwayguest'])->name('pmwayguest')->withoutMiddleware([Authenticate::class]);
 Route::get('/pmwayauth', [FrontendController::class, 'pmwayauth'])->middleware(['auth', 'verified'])->name('pmwayauth');
-Route::get('/laws', \App\Livewire\Laws::class)->name('laws');
-Route::get('/about', About::class);
+Route::get('/laws', \App\Livewire\Pmway\Laws::class)->name('laws');
+Route::get('/about', \App\Livewire\Pmway\About::class)->name('about');
+
 Route::get('/accelerate', \App\Livewire\Accelerate::class);
+
+
+//////////////////////ITIL 4
+Route::get('/itilfourpractices', \App\Livewire\Pmway\Itil\ItilFourPractices::class)->name('itilfourpractices');
+
+
+//////////////////////ITIL 3//////////////////////
+//Route::get('/itiloverview', \App\Livewire\Itil\Pmway\itilfourpractices::class)->name('itilfourpractices');
+//Route::get('/itilss', [IndexController::class, 'itilss']);
+//Route::get('/itilsd', [IndexController::class, 'itilsd']);
+//Route::get('/itilst', [IndexController::class, 'itilst']);
+//Route::get('/itilso', [IndexController::class, 'itilst']);
+//Route::get('/itilcsi', [IndexController::class, 'itilcsi']);
 
 
 Route::get('/lwsearch', \App\Livewire\LWSearch::class);
