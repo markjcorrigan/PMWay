@@ -8,44 +8,6 @@
 {{--    </head>--}}
 </head>
 <body class="min-h-screen bg-white dark:bg-zinc-800" >
-<style>
-    @media (max-width: 768px) {
-        flux-header {
-            padding-left: 16px;
-            padding-right: 50px;
-        }
-    }
-
-
-    .custom-button:hover {
-        color: #fff !important;
-    }
-
-
-
-
-    .dropdown-menu {
-        z-index: 50;
-    }
-
-
-    .custom-button:focus {
-        background-color: #212529 !important; /* light gray background color */
-    }
-
-    .custom-button:hover {
-        background-color: transparent; /* or any other color you want */
-        color: #000; /* black text color */
-
-    }
-
-    /*.content {*/
-    /*    padding-bottom: 300px; !* Increase the padding to match the footer height *!*/
-    /*}*/
-
-
-
-</style>
 
 
 {{--<flux:header class="w-full flex justify-center px-4 py-2 bg-gray-100 shadow-md">--}}
@@ -94,7 +56,7 @@
 
         <flux:dropdown>
 
-        <flux:button variant="primary" icon:trailing="chevron-down">Menu</flux:button>
+        <flux:button variant="primary" class="custom-button hover:text-white" icon:trailing="chevron-down"> Menu</flux:button>
 
             <flux:menu class="!bg-gray-900">
 

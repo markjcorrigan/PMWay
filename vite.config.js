@@ -8,7 +8,7 @@ export default defineConfig(({command, mode}) => {
     return {
         plugins: [
             laravel({
-                input: ['resources/css/app.css', 'resources/js/app.js'],
+                input: ['resources/css/app.css', 'resources/css/styles.css', 'resources/js/app.js'],
                 refresh: [
                     'resources/views/**/*.blade.php',
                     'resources/views/**/*.php',

@@ -60,25 +60,7 @@
 
 
 {{--    </style>--}}
-<style>
-    a {
-        text-decoration: none;
-        color: #337ab7; /* default link color */
-        transition: color 0.2s ease-in-out;
-    }
 
-    a:hover {
-        color: #23527c; /* hover link color */
-        text-decoration: underline;
-    }
-
-    td {
-        padding-left: 20px;
-    }
-
-
-
-</style>
         <div class="flex justify-center mt-4">
             <div x-on:click="if (@this.showCollapse) { @this.set('showCollapse', false); window.location.reload(); } else { @this.set('showCollapse', true); }" class="bg-gray-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">
                 <div class="flex flex-col justify-center text-center">
