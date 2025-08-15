@@ -1,14 +1,17 @@
-import {defineConfig, loadEnv} from 'vite'
+import { defineConfig, loadEnv } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig(({command, mode}) => {
-    const env = loadEnv(mode, process.cwd(), '')
+export default defineConfig(({ command, mode }) => {
+    const env = loadEnv(mode, './', '');
 
     return {
         plugins: [
             laravel({
-                input: ['resources/css/app.css', 'resources/css/styles.css', 'resources/js/app.js'],
+                input: [
+                    'resources/css/app.css',
+                    'resources/js/app.js',
+                ],
                 refresh: [
                     'resources/views/**/*.blade.php',
                     'resources/views/**/*.php',
@@ -23,8 +26,11 @@ export default defineConfig(({command, mode}) => {
             cors: true,
             open: env.APP_URL,
         },
+        build: {
+            outDir: 'public/build',
+        },
+        assetsInclude: ['resources/fontawesome/**'], // Include Font Awesome assets
     };
-
 });
 
 
@@ -41,8 +47,14 @@ export default defineConfig(({command, mode}) => {
 //     return {
 //         plugins: [
 //             laravel({
-//                 input: ['resources/css/app.css', 'resources/js/app.js'],
-//                 refresh: [`resources/views/**/*`],
+//                 input: ['resources/css/app.css', 'resources/css/styles.css', 'resources/js/app.js'],
+//                 refresh: [
+//                     'resources/views/**/*.blade.php',
+//                     'resources/views/**/*.php',
+//                     'app/Livewire/**/*.php',
+//                     'app/View/Components/**/*.php',
+//                     'app/View/Components/livewire/**/*.php',
+//                 ],
 //             }),
 //             tailwindcss(),
 //         ],
@@ -53,3 +65,8 @@ export default defineConfig(({command, mode}) => {
 //     };
 //
 // });
+
+
+
+
+

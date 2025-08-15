@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\frontend;
 
+use App\Mail\BlogPostNotification;
 use App\Models\BlogPost;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 use Illuminate\Support\Facades\Gate;
@@ -50,12 +52,14 @@ class UserPostsBlogPostController extends Controller
         $post->photo = $imagePath;
         $post->post_tags = $validatedData['post_tags'];
         $post->post_description = $validatedData['post_description'];
+//        dd(Auth::user()->name); // Add this line before saving the post
         $post->save();
 
         $notification = [
             'message' => 'BlogPost Posted Successfully. Waiting on approval!',
             'alert-type' => 'success'
         ];
+        Mail::to('markjc@mweb.co.za')->send(new BlogPostNotification($post));
 
         return redirect()->route('blog')->with($notification);
     } // End method

@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="post_description" class="col-sm-3 col-form-label">Post Content<br>(Use Format to change the color of the text etc.)</label>
+                        <label for="post_description" class="col-sm-3 col-form-label">Post Content</label>
                         <div class="col-sm-9">
                             <textarea class="form-control @error('post_description') is-invalid @enderror" id="tinymceExample" name="post_description" rows="10">{{ old('post_description') }}</textarea>
                             @error('post_description')
@@ -149,9 +149,12 @@
                     <button type="submit" class="btn btn-secondary">Add Post</button>
                 </form>
             </div>
+                    <br>
+                    <p>Note:  An email will be sent to the Webmaster when you add this post.  <br>After authorization it will appear in the list of newly added posts.</p>
         </div>
     </div>
         </div>
+
 
 </main>
 

@@ -9,10 +9,14 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Cache;
+use App\Mail\BlogPostNotification;
+
+
 
 
 
@@ -134,6 +138,9 @@ class BlogPostController extends Controller
             'message' => 'BlogPost Updated Successfully!',
             'alert-type' => 'info'
         ];
+
+
+
 
         return redirect()->route('all.post')->with($notification);
     } // End method

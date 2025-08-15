@@ -7,7 +7,17 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class BlogPost extends Model
 {
-    protected $guarded = [];
+//    protected $guarded = [];
+    protected $fillable = [
+        'user_id',
+        'name',
+        'post_title',
+        'post_slug',
+        'photo',
+        'post_tags',
+        'post_description',
+    ];
+
 
     public function author(): BelongsTo
     {

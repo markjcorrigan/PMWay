@@ -24,7 +24,8 @@
             <tr>
                 <td>{{ $key+1 }}</td>
                 <td> <img src="{{ asset($post->photo) }}" alt=""> </td>
-                <td>{{ Str::title($post->author->name) }}</td>
+{{--                <td>{{ Str::title($post->author->name) }}</td>--}}
+                <td>{{ Str::title($post->author?->name) }}</td>
                 <td>{{ Str::limit($post->post_title, 70) }}</td>
                 <td>
                     <a href="{{ route('edit.post', [$post->id]) }}"  class="btn btn-inverse-light" style="margin-right: 10px;">Edit</a>

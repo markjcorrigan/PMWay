@@ -10,6 +10,9 @@ use App\Models\SiteSettings;
 
 class Home extends Component
 {
+    public $title = 'Home Page';
+
+
     public $siteSettings;
 
     public $showCollapse = false;
@@ -24,7 +27,7 @@ class Home extends Component
         $this->siteSettings = SiteSettings::first(); // or SiteSettings::all() depending on your needs
     }
 
-    #[Layout('components.layouts.app.frontend')]
+    #[Layout('components.layouts.app.frontend', ['title' => 'Home'])]
     public function render()
     {
         return view('livewire.home')

@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="post_tags" class="col-sm-3 col-form-label">Post Tags <br>(CSV (Comma Separated Values))</label>
+                        <label for="post_tags" class="col-sm-3 col-form-label">Post Tags <br>(CSV: Comma Separated Values)</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control @error('post_tags') is-invalid @enderror" name="post_tags" placeholder="Tag1, Tag2 etc." value="{{ old('post_tags') }}" required>
                             @error('post_tags')
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="post_description" class="col-sm-3 col-form-label">Post Content<br>(Use Format to change the color of the text etc.)</label>
+                        <label for="post_description" class="col-sm-3 col-form-label">Post Content</label>
                         <div class="col-sm-9">
                             <textarea class="form-control @error('post_description') is-invalid @enderror" id="tinymceExample" name="post_description" rows="10">{{ old('post_description') }}</textarea>
                             @error('post_description')
