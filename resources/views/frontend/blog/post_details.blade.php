@@ -76,32 +76,32 @@
 </head>
 
 <body>
-   <!-- Preloader Area Start -->
-    <div class="preloader">
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-         <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-      </svg>
+{{--   <!-- Preloader Area Start -->--}}
+{{--    <div class="preloader">--}}
+{{--      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">--}}
+{{--         <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>--}}
+{{--      </svg>--}}
 
-      <div class="preloader-heading">
-         <div class="load-text">
-            <span>L</span>
-            <span>o</span>
-            <span>a</span>
-            <span>d</span>
-            <span>i</span>
-            <span>n</span>
-            <span>g</span>
-         </div>
-      </div>
-   </div>
-   <!-- Preloader Area End -->
+{{--      <div class="preloader-heading">--}}
+{{--         <div class="load-text">--}}
+{{--            <span>L</span>--}}
+{{--            <span>o</span>--}}
+{{--            <span>a</span>--}}
+{{--            <span>d</span>--}}
+{{--            <span>i</span>--}}
+{{--            <span>n</span>--}}
+{{--            <span>g</span>--}}
+{{--         </div>--}}
+{{--      </div>--}}
+{{--   </div>--}}
+{{--   <!-- Preloader Area End -->--}}
 
-   <!-- start: Back To Top -->
-   <div class="progress-wrap" id="scrollUp">
-      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-      </svg>
-   </div>
+{{--   <!-- start: Back To Top -->--}}
+{{--   <div class="progress-wrap" id="scrollUp">--}}
+{{--      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">--}}
+{{--         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />--}}
+{{--      </svg>--}}
+{{--   </div>--}}
    <!-- end: Back To Top -->
 
    <!-- HEADER START -->
@@ -358,7 +358,9 @@
 
 
 
-
+                   @php
+                       $rposts = App\Models\BlogPost::where('approved', 1)->latest()->paginate(10);
+                   @endphp
                    <!--Two ways of searching:  Traditional came with blog-->
                    <div class="sidebar_widget widget_search wow fadeInUp" data-wow-delay=".3s">
                        <p>Cards of search results:</p>
@@ -379,7 +381,7 @@
                                @php $comments = App\Models\Comment::where('post_id', $rpost->id)->where('status', 1)->get(); @endphp
                                <li>
                                    <div class="recent-post_thumb">
-                                       <a href="/post/details/{{ $rpost->post_slug }}">
+                                       <a href="/post/details/{{ $rpost->id }}">
                                            <img src="{{ asset($rpost->photo) }}" alt="" />
                                        </a>
                                    </div>
@@ -394,6 +396,7 @@
                                    </div>
                                </li>
                            @endforeach
+                               {{ $rposts->links() }}
                        </ul>
                    </div>
                    <div class="sidebar_widget widget_tag_cloud wow fadeInUp" data-wow-delay=".3s">
@@ -405,10 +408,12 @@
                            @foreach ($tags as $tag)
                                <a href="#"> {{ $tag }} </a>
                            @endforeach
+
                        </div>
                    </div>
                </div>
            </div>
+
 
 
            <div class="row">
@@ -420,7 +425,7 @@
                                <div class="col-lg-4 col-md-6">
                                    <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
                                        <div class="blog-thumb">
-                                           <a href="/post/details/{{ $post->post_slug }}">
+                                           <a href="/post/details/{{ $post->id }}">
                                                <img src="{{ asset($post->photo) }}" alt="" />
                                            </a>
                                        </div>
@@ -431,12 +436,12 @@
                                                    <li><i class="fa-light fa-comments"></i> <a href="#">Comment ({{ count($comments ?? []) }})</a></li>
                                                </ul>
                                            </div>
-                                           <h3 class="blog-title"><a href="/post/details/{{ $post->post_slug }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
+                                           <h3 class="blog-title"><a href="/post/details/{{ $post->id }}">{{ Str::limit($post->post_title, 40) }}</a></h3>
                                        </div>
                                    </div>
                                </div>
                            @endforeach
-                           {{ $posts->links() }}
+{{--                           {{ $posts->links() }}--}}
                        @else
                            <p>No Post found!! </p>
                        @endif
