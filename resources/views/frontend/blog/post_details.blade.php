@@ -52,7 +52,25 @@
             left: 0;
         }
 
+        .custom-breadcrumbs a {
+            color: white !important;
+        }
 
+        .custom-breadcrumbs a:hover {
+            color: #ccc !important; /* Change to your desired hover color */
+        }
+
+
+        .custom-breadcrumbs a[href*="{{ Request::url() }}"] {
+            text-decoration: underline;
+        }
+
+        .custom-breadcrumbs .active {
+            text-decoration: underline;
+            text-decoration-color: white;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+        }
     </style>
 
 </head>
@@ -100,14 +118,15 @@
                        <div class="breadcrumb_content d-inline-flex flex-column align-items-center w-100">
                            <h2 class="title wow fadeInUp" data-wow-delay=".3s">{{ $post->post_title }}</h2><br><br>
                            <div class="d-flex justify-content-end w-100">
-                        <span class="header-button ms-auto">
-                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Back</a>
-                        </span>
+{{--                        <span class="header-button ms-auto">--}}
+{{--                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Back</a>--}}
+{{--                        </span>--}}
                            </div>
                        </div>
                    </div>
                </div>
            </div>
+
        </section>
 
 
@@ -149,9 +168,48 @@
  <!-- START: Blog Section -->
  <section class="full-width tj-post-details__area">
     <div class="container">
+
+        @php
+            $firstPost = App\Models\BlogPost::where('approved', 1)->oldest()->first();
+            $firstPostId = $firstPost->id;
+        @endphp
+        <div class="grid grid-cols-12">
+            <div class="col-start-1 col-span-1 ">
+                <flux:breadcrumbs >
+
+                    <div class="custom-breadcrumbs">
+                        <flux:breadcrumbs>
+
+                            <div class="custom-breadcrumbs">
+                                <flux:breadcrumbs>
+                                    <flux:breadcrumbs.item class="{{ Request::is('/') ? 'active' : '' }}" href="/" separator="slash">Home</flux:breadcrumbs.item>
+                                    <flux:breadcrumbs.item class="{{ Request::is('blog') ? 'active' : '' }}" href="/blog" separator="slash">Blog</flux:breadcrumbs.item>
+                                    <flux:breadcrumbs.item class="{{ Request::is('post/details/*') ? 'active' : '' }}" href="{{ url('/post/details/' . $firstPostId) }}" separator="slash">Posts</flux:breadcrumbs.item>
+                                </flux:breadcrumbs>
+                            </div>
+
+                        </flux:breadcrumbs>
+                    </div>
+
+
+
+                </flux:breadcrumbs>
+            </div>
+        <div>
+
+            </div>
+        </div>
+        <h2></h2>
+        <br><br>
+
+{{--        <span class="header-button">--}}
+{{--                    <a href="{{ url('/post/details/' . $firstPostId) }}" class="btn tj-btn-primary">List of Posts</a>--}}
+{{--                    </span>--}}
+
        <div class="row justify-content-center">
           <div class="col-lg-8">
              <div class="tj-post-details__container">
+
                 <article class="tj-single__post">
                    <div class="tj-post__thumb">
 {{--                      <img src="{{asset($post->photo)}}" alt="" style="width: 1000px; height:400px;" />--}}
@@ -163,7 +221,7 @@
 
                    <div class="tj-post__content">
                       <div class="tj-post__meta entry-meta">
-                         <span><i class="fa-light fa-user"></i> <a href="#">By {{ $post->author->name }}</a></span>
+                         <span><i class="fa-light fa-user"></i> <a href="#">By {{ $post->id }}</a></span>
                          <span><i class="fa-light fa-calendar-days"></i> {{ $post->created_at->format('D M, Y') }}</span>
 {{--                       <span><i class="fa-light fa-comments"></i><a href="#">Comments ({{ count($comments) }})</a></span>--}}
                           <span><i class="fa-light fa-comments"></i><a href="#"> ({{ count($comments ?? []) }})</a></span>

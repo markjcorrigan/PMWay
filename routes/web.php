@@ -23,16 +23,48 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/optimize', function () {
-    Artisan::call('queue:restart');
-    Artisan::call('cache:clear');
-    Artisan::call('config:cache');
-    Artisan::call('route:clear');
-    Artisan::call('view:clear');
-    Artisan::call('optimize:clear');
-    Artisan::call('optimize');
-    Artisan::call('config:clear'); // added config clear before dump autoload
-    exec('composer dump-autoload');
-    return 'Optimization completed!';
+    $kernel = app()->make(Illuminate\Contracts\Console\Kernel::class);
+
+    $kernel->call('queue:restart');
+    echo "Queue restarted.\n";
+    flush();
+
+    $kernel->call('cache:clear');
+    echo "Cache cleared.\n";
+    flush();
+
+    $kernel->call('config:cache');
+    echo "Config cached.\n";
+    flush();
+
+    $kernel->call('route:clear');
+    echo "Routes cleared.\n";
+    flush();
+
+    $kernel->call('view:clear');
+    echo "Views cleared.\n";
+    flush();
+
+    $kernel->call('optimize:clear');
+    echo "Optimization cleared.\n";
+    flush();
+
+    $kernel->call('optimize');
+    echo "Optimization completed.\n";
+    flush();
+
+    $kernel->call('config:clear');
+    echo "Config cleared.\n";
+    flush();
+
+    $output = null;
+    $result = null;
+    exec('composer dump-autoload', $output, $result);
+    echo "Composer autoload dumped.\n";
+    flush();
+
+    echo 'All optimization steps completed!';
+    flush();
 });
 
 //Route::get('/dump-autoload', function () {
@@ -74,7 +106,7 @@ Route::get('/route-clear', function () {
 });
 
 
-
+Route::get('/greeter', \App\Livewire\Greeter::class)->name('greeter');  //has tailwind grid
 
 //Route::redirect('/', '/pmwayguest')->withoutMiddleware([Authenticate::class]);
 Route::get('/simulate-500', function () {

@@ -29,7 +29,7 @@ export default defineConfig(({ command, mode }) => {
         build: {
             outDir: 'public/build',
         },
-        assetsInclude: ['resources/fontawesome/**'], // Include Font Awesome assets
+       assetsInclude: ['resources/fontawesome/**'], // Include Font Awesome assets
     };
 });
 

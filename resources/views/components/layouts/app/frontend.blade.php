@@ -2,15 +2,19 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
 <head>
     @include('partials.head')
+
+
 </head>
 
 
 
 
 
-<body class="min-h-screen">
 
-<flux:header container class="border-b flex justify-between items-center shadow-b bg-gray-900">
+<body class="min-h-screen" >
+
+
+<flux:header container class="border-b flex justify-between items-center shadow-b bg-gray-900 min-h-[60px]">
     <div class="flex items-center">
         <a href="{{ route('home') }}" class="nav-link" style="height: 40px; width: 40px;">
             <img src="{{ asset('images/house.png') }}" alt="Home Icon">
@@ -193,6 +197,8 @@
 
 
 @fluxScripts
+
+
 </body>
 
 </html>

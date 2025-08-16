@@ -1,42 +1,53 @@
 <style>
 
-    /*<!--NB This is the top 6 blogs page-->*/
-    .btn.tj-btn-primary {
-        position: relative;
-    }
+    /*!*<!--NB This is the top 6 blogs page-->*!*/
+    /*.btn.tj-btn-primary {*/
+    /*    position: relative;*/
+    /*}*/
 
-    .btn.tj-btn-primary::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 1px; /* Changed from 2px to 1px */
-        bottom: 0;
-        left: 50%;
-        background-color: #fff;
-        transition: all 0.3s ease-in-out;
-    }
+    /*.btn.tj-btn-primary::after {*/
+    /*    content: '';*/
+    /*    position: absolute;*/
+    /*    width: 0;*/
+    /*    height: 1px; !* Changed from 2px to 1px *!*/
+    /*    bottom: 0;*/
+    /*    left: 50%;*/
+    /*    background-color: #fff;*/
+    /*    transition: all 0.3s ease-in-out;*/
+    /*}*/
 
-    .btn.tj-btn-primary:hover::after {
-        width: 100%;
-        left: 0;
-    }
+    /*.btn.tj-btn-primary:hover::after {*/
+    /*    width: 100%;*/
+    /*    left: 0;*/
+    /*}*/
 
 
 </style>
+<script src="https://cdn.tailwindcss.com"></script>
+
 
 <!--Buttons to home and forward to post detail-->
 <!-- START: Breadcrumb Area -->
 <section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}" data-bg-color="#140C1C">
     <div class="container">
+        @php
+            $firstPost = App\Models\BlogPost::where('approved', 1)->oldest()->first();
+            $firstPostId = $firstPost->id;
+        @endphp
+
+
+
         <div class="row justify-content-end">
             <div class="col-auto">
                 <div class="d-flex justify-content-end align-items-center">
-                    <span class="header-button me-3">
-                        <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>
-                    </span>
-                    <span class="header-button">
-                        <a href="{{ url('/post/details/1') }}" class="btn tj-btn-primary">List of Posts</a>
-                    </span>
+{{--                    <span class="header-button me-3">--}}
+{{--                        <a href="{{ url('/') }}" class="btn tj-btn-primary">Home</a>--}}
+{{--                    </span>--}}
+
+
+{{--                    <span class="header-button">--}}
+{{--                    <a href="{{ url('/post/details/' . $firstPostId) }}" class="btn tj-btn-primary">List of Posts</a>--}}
+{{--                    </span>--}}
                 </div>
             </div>
         </div>
@@ -65,12 +76,62 @@
             left: 0;
         }
 
+        .custom-breadcrumbs a {
+            color: white !important;
+        }
+
+        .custom-breadcrumbs a:hover {
+            color: #ccc !important; /* Change to your desired hover color */
+        }
+
+
+        .custom-breadcrumbs a[href*="{{ Request::url() }}"] {
+            text-decoration: underline;
+        }
+
+        .custom-breadcrumbs .active {
+            text-decoration: underline;
+            text-decoration-color: white;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+        }
+
+
+
+
 
     </style>
+
+
     <div class="container">
        <div class="row">
+           <div class="grid grid-cols-12">
+               <div class="col-start-1 col-span-1 ">
+                   <flux:breadcrumbs >
+
+                       <div class="custom-breadcrumbs">
+                           <flux:breadcrumbs>
+
+                               <div class="custom-breadcrumbs">
+                                   <flux:breadcrumbs>
+                                       <flux:breadcrumbs.item class="{{ Request::is('/') ? 'active' : '' }}" href="/" separator="slash">Home</flux:breadcrumbs.item>
+                                       <flux:breadcrumbs.item class="{{ Request::is('blog') ? 'active' : '' }}" href="/blog" separator="slash">Blog</flux:breadcrumbs.item>
+                                       <flux:breadcrumbs.item class="{{ Request::is('post/details/*') ? 'active' : '' }}" href="{{ url('/post/details/' . $firstPostId) }}" separator="slash">Posts</flux:breadcrumbs.item>
+                                   </flux:breadcrumbs>
+                               </div>
+
+                           </flux:breadcrumbs>
+                       </div>
+
+
+
+                   </flux:breadcrumbs>
+               </div>
+
+           </div>
           <div class="col-md-12">
              <div class="section-header text-center">
+                 <br><br>
 
 
 
