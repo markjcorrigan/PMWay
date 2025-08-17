@@ -6,10 +6,17 @@
 
 </head>
 
+<style>
+.custom-link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+}
 
-
-
-
+.custom-link:hover {
+    color: #cccccc; /* or any other gray shade you prefer */
+}
+</style>
 
 <body class="min-h-screen" >
 
@@ -23,14 +30,15 @@
     <div class="flex items-center gap-2 ml-auto">
 
 
+
         @auth
             <flux:navbar class=" ">
-                <flux:navbar.item  variant="primary" class="custom-link" href="{{ route('home') }}" :current="request()->routeIs('home')">
+                <flux:navbar.item  variant="primary" class="custom-button custom-link hover:text-white" href="{{ route('home') }}" :current="request()->routeIs('home')">
                     Home
                 </flux:navbar.item>
             </flux:navbar>
             <flux:navbar class=" ">
-                <flux:navbar.item  variant="primary" class="custom-link" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')">
+                <flux:navbar.item  variant="primary" class="custom-button custom-link" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')">
                     Dashboard
                 </flux:navbar.item>
             </flux:navbar>
@@ -60,9 +68,10 @@
         @if (Route::has('login'))
             <nav class="flex items-center justify-end gap-4">
                 @guest
-                    <flux:button href="{{ route('login') }}" variant="primary" class="custom-button custom-link"> {{ __('global.log_in') }} </flux:button>
+
                     @if (Route::has('register'))
-                        <flux:button href="{{ route('register') }}" variant="primary" class="custom-button custom-link" > {{ __('global.register') }} </flux:button>
+                        <flux:button href="{{ route('login') }}" variant="primary" class="custom-button custom-link bg-dark-500 hover:bg-dark-700 text-white dark:bg-dark-900 dark:hover:bg-dark-800 dark:text-white"> {{ __('global.log_in') }} </flux:button>
+                        <flux:button href="{{ route('register') }}" variant="primary" class="custom-button custom-link bg-dark-500 hover:bg-dark-700 text-white dark:bg-dark-900 dark:hover:bg-dark-800 dark:text-white"> {{ __('global.register') }} </flux:button>
                     @endif
                 @endguest
             </nav>

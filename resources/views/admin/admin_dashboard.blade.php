@@ -132,7 +132,8 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="{{ asset('backend/assets/js/code.js') }}" ></script>
 
-  <script src="{{asset('../../../backend/assets/vendors/tinymce/tinymce.min.js')}}"></script>
-  <script src="{{asset('../../../backend/assets/js/tinymce.js')}}"></script>
+{{--  <script src="{{asset('../../../backend/assets/vendors/tinymce/tinymce.min.js')}}"></script>--}}
+{{--  <script src="{{asset('../../../backend/assets/js/tinymce.js')}}"></script>--}}
+    <script src="{{ asset('js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
 </body>
 </html>

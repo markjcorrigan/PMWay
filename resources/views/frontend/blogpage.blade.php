@@ -10,7 +10,7 @@
 
 
     <!-- Site Title -->
-   <title>{{ config('app.name') }} </title>
+    <title>Blog</title>
 
    <!-- Place favicon.ico in the root directory -->
 {{--   <link rel="apple-touch-icon" href=" {{asset('frontend/assets/img/favicon.png')}} " />--}}

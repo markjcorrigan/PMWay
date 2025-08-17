@@ -4,7 +4,9 @@
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">Add Post </h6>
-{{--                @if ($errors->any())--}}
+
+
+{{--                                @if ($errors->any())--}}
 {{--                    <div class="alert alert-danger">--}}
 {{--                        <ul>--}}
 {{--                            @foreach ($errors->all() as $error)--}}

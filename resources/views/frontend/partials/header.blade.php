@@ -37,17 +37,17 @@
 {{--                 </a>--}}
 
 {{--             </div>--}}
-             <div class="menu-bar d-lg-none">
-                <button>
-                   <span></span>
-                   <span></span>
-                   <span></span>
-                   <span></span>
-                </button>
-             </div>
-          </div>
-       </div>
-    </div>
+{{--             <div class="menu-bar d-lg-none">--}}
+{{--                <button>--}}
+{{--                   <span></span>--}}
+{{--                   <span></span>--}}
+{{--                   <span></span>--}}
+{{--                   <span></span>--}}
+{{--                </button>--}}
+{{--             </div>--}}
+{{--          </div>--}}
+{{--       </div>--}}
+{{--    </div>--}}
  </header>
  <header class="tj-header-area header-2 header-sticky sticky-out">
     <div class="container">

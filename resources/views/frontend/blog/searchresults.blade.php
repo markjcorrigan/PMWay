@@ -7,9 +7,8 @@
     <meta name="description" content="" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-
     <!-- Site Title -->
-    <title>{{ config('app.name') }} </title>
+    <title>Blog</title>
 
     <!-- Place favicon.ico in the root directory -->
     {{--   <link rel="apple-touch-icon" href=" {{asset('frontend/assets/img/favicon.png')}} " />--}}
@@ -31,6 +30,7 @@
     <link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}" />
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+
     <style>
         .btn.tj-btn-primary {
             position: relative;
@@ -75,46 +75,13 @@
 
 </head>
 
-
-</head>
-
 <body>
-<!-- Preloader Area Start -->
-{{--<div class="preloader">--}}
-{{--    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">--}}
-{{--        <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>--}}
-{{--    </svg>--}}
-
-{{--    <div class="preloader-heading">--}}
-{{--        <div class="load-text">--}}
-{{--            <span>L</span>--}}
-{{--            <span>o</span>--}}
-{{--            <span>a</span>--}}
-{{--            <span>d</span>--}}
-{{--            <span>i</span>--}}
-{{--            <span>n</span>--}}
-{{--            <span>g</span>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-<!-- Preloader Area End -->
-
-{{--<!-- start: Back To Top -->--}}
-{{--<div class="progress-wrap" id="scrollUp">--}}
-{{--    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">--}}
-{{--        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />--}}
-{{--    </svg>--}}
-{{--</div>--}}
+<x-blog-loading-preloader />
 
 @php
     $firstPost = App\Models\BlogPost::where('approved', 1)->oldest()->first();
     $firstPostId = $firstPost->id;
 @endphp
-<!-- end: Back To Top -->
-
-<!-- HEADER START -->
-{{--        @include('frontend.partials.header')--}}
-<!-- HEADER END -->
 
 <main class="site-content" id="content">
 <section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}" data-bg-color="#140C1C">
@@ -126,19 +93,12 @@
                     <h2 class="title wow fadeInUp" data-wow-delay=".3s">Search Results for "{{ $query }}"</h2>
                     <span class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
                              </span>
-{{--                    <span class="header-button ms-3">--}}
-{{--                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">List of Posts</a>--}}
-{{--                        </span>&nbsp;&nbsp;&nbsp;--}}
-
                 </div>
             </div>
         </div>
     </div>
 
 </section>
-<!-- END: Breadcrumb Area -->
-
-<!-- START: Blog Section -->
     <section class="full-width tj-post-details__area">
         <div class="container">
             <div class="grid grid-cols-12">
@@ -147,7 +107,6 @@
 
                         <div class="custom-breadcrumbs">
                             <flux:breadcrumbs>
-
                                 <div class="custom-breadcrumbs">
                                     <flux:breadcrumbs>
                                         <flux:breadcrumbs.item class="{{ Request::is('/') ? 'active' : '' }}" href="/" separator="slash">Home</flux:breadcrumbs.item>
@@ -159,15 +118,13 @@
 
                             </flux:breadcrumbs>
                         </div>
-
-
-
                     </flux:breadcrumbs>
                 </div>
-
-            </div></div>
+            </div>
+        </div>
             <h2></h2>
             <br><br>
+
         <div class="container">
 
             <div class="row">
@@ -201,18 +158,10 @@
 
     </section>
 
-<!-- END: Blog Section -->
-
-<!-- END: Blog Section -->
 
     <x-footer />
 </main>
 
-<!-- FOOTER AREA START -->
-
-<!-- FOOTER AREA END -->
-
-<!-- CSS here -->
 <script src="{{asset('frontend/assets/js/jquery.min.js')}}"></script>
 <script src="{{asset('frontend/assets/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('frontend/assets/js/nice-select.min.js')}}"></script>

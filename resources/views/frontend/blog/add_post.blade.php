@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Site Title -->
-    <title>{{ config('app.name') }} </title>
+    <title>Blog</title>
 
     <!-- Place favicon.ico in the root directory -->
 {{--    <link rel="apple-touch-icon" href=" {{asset('frontend/assets/img/favicon.png')}} " />--}}
@@ -33,12 +33,62 @@
 {{--    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>--}}
 {{--    <--NB valid Api key needed-->--}}
 
-    <script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js"></script>
+{{--    <script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js"></script>--}}
+    <script src="{{ asset('js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
 
 
 </head>
+<x-blog-loading-preloader />
 
 <body>
+<style>
+    .btn.tj-btn-primary {
+        position: relative;
+    }
+
+    .btn.tj-btn-primary::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px; /* Changed from 2px to 1px */
+        bottom: 0;
+        left: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn.tj-btn-primary:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .custom-breadcrumbs a {
+        color: white !important;
+    }
+
+    .custom-breadcrumbs a:hover {
+        color: #ccc !important; /* Change to your desired hover color */
+    }
+
+
+    .custom-breadcrumbs a[href*="{{ Request::url() }}"] {
+        text-decoration: underline;
+    }
+
+    .custom-breadcrumbs .active {
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+    }
+
+    .custom-breadcrumbs {
+        white-space: nowrap;
+    }
+
+
+
+</style>
 <!-- Preloader Area Start -->
  <div class="preloader">
    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -67,18 +117,22 @@
 </div>
 <!-- end: Back To Top -->
 <main class="site-content" id="content">
-
+    @php
+        $firstPost = App\Models\BlogPost::where('approved', 1)->oldest()->first();
+        $firstPostId = $firstPost->id;
+    @endphp
     <!-- START: Breadcrumb Area -->
 
     <section class="breadcrumb_area" data-bg-image="{{ asset('frontend/assets/img/breadcrumb/breadcrumb-bg.jpg') }}" data-bg-color="#140C1C">
         <div class="container">
             <div class="row">
+
                 <div class="col">
                     <div class="breadcrumb_content d-flex flex-column align-items-end">
                         <div class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
-                        <span class="header-button ms-3">
-                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Back</a>
-                        </span>
+{{--                        <span class="header-button ms-3">--}}
+{{--                            <a href="{{ url('/blog') }}" class="btn tj-btn-primary">Back</a>--}}
+{{--                        </span>--}}
                         </div>
                     </div>
                 </div>
@@ -91,6 +145,29 @@
     <!-- START: Blog Section -->
     <section class="full-width tj-post-details__area">
         <div class="container">
+            <div class="grid grid-cols-12">
+                <div class="col-start-1 col-span-1 ">
+                    <flux:breadcrumbs >
+                        <div class="custom-breadcrumbs">
+                            <flux:breadcrumbs>
+                                <div class="custom-breadcrumbs">
+                                    <flux:breadcrumbs>
+                                        <flux:breadcrumbs.item class="{{ Request::is('/') ? 'active' : '' }}" href="/" separator="slash">Home</flux:breadcrumbs.item>
+                                        <flux:breadcrumbs.item class="{{ Request::is('blog') ? 'active' : '' }}" href="/blog" separator="slash">Blog</flux:breadcrumbs.item>
+                                        <flux:breadcrumbs.item class="{{ Request::is('post/details/*') ? 'active' : '' }}" href="{{ url('/post/details/' . $firstPostId) }}" separator="slash">Posts</flux:breadcrumbs.item>
+                                        <flux:breadcrumbs.item class="{{ Request::is('useraddpost/') ? 'active' : '' }}" href="{{ url('/useraddpost/') }}">Add Post</flux:breadcrumbs.item>
+                                    </flux:breadcrumbs>
+                                </div>
+                            </flux:breadcrumbs>
+                        </div>
+                    </flux:breadcrumbs>
+                </div>
+            </div>
+{{--            <div class="flex justify-center items-center">--}}
+{{--                <img src="{{ asset('images/kiss.png') }}" alt="Keep it Sweet and Simple">--}}
+
+{{--            </div>--}}
+            <br><br>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="tj-post-details__container">
@@ -108,7 +185,7 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="post_tags" class="col-sm-3 col-form-label">Post Tags <br>(CSV (Comma Separated Values))</label>
+                        <label for="post_tags" class="col-sm-3 col-form-label">Post Tags <br>(CSV: Comma Separated Values)</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control @error('post_tags') is-invalid @enderror" name="post_tags" placeholder="Tag1, Tag2 etc." value="{{ old('post_tags') }}" required>
                             @error('post_tags')
@@ -150,9 +227,17 @@
                 </form>
             </div>
                     <br>
-                    <p>Note:  An email will be sent to the Webmaster when you add this post.  <br>After authorization it will appear in the list of newly added posts.</p>
+                    <p>Note:  An email will be sent to the Webmaster when you add this post.  <br>After by the Webmaster the post will appear in the Blog.<br>
+                        When I receive notice that you have posted I will go over the post and, if possible (needed), will flesh out the concept.<br>I will credit the author (please add who you are and where you live at the end of the post).</p>
         </div>
     </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <br><br>
+            <h2 class="bold text-[#fcf0da] text-4xl" >Keep it Sweet and Simple</h2>
+            <img src="{{ asset('images/kissimage.jpg') }}" alt="Keep it Sweet and Simple" class="mb-4 mt-4">
+            <img src="{{ asset('images/kissimage2.jpg') }}" alt="Keep it Sweet and Simple" class="mb-4">
+
         </div>
 
 

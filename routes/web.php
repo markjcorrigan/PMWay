@@ -174,7 +174,7 @@ Route::post('/forcelogout', [AuthenticatedSessionController::class, 'destroy'])
 Route::get('/portfoliodash', [AdminController::class, 'PortfolioDash'])->name('portfoliodash')->middleware(['auth', 'verified', 'permission:portfolio dash']);
 Route::get('/blog', [FrontendController::class, 'blog'])->name('blog');
 Route::get('/portfolio', [FrontendController::class, 'portfolio'])->name('portfolio');
-//Route::get('/post/details/{slug}', [FrontendController::class, 'BlogDetails']);
+Route::get('/post/details/{slug}', [FrontendController::class, 'BlogDetails']);
 Route::get('/post/details/{id}', [FrontendController::class, 'BlogDetails']);
 
 Route::post('store-comment', [FrontendController::class, 'StoreComment'])->name('store.comment');
@@ -362,4 +362,13 @@ Route::middleware(['auth'])->group(function (): void {
     });
 });
 
+///These routes are just testing out livewire
+Route::get('/calculator', \App\Livewire\Calculator::class)->name('calculator');
+Route::get('/todo-list', \App\Livewire\TodoList::class)->name('todo-list');
+Route::get('/cascading-dropdown', \App\Livewire\CascadingDropdown::class)->name('cascading-dropdown');
+Route::get('/products', \App\Livewire\ProductsSearch::class)->name('products');
+Route::get('/image-upload', \App\Livewire\ImageUpload::class)->name('image-upload');
+Route::get('/registertest', \App\Livewire\RegisterForm::class)->name('registertest');
+
 require __DIR__.'/auth.php';
+
