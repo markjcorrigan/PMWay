@@ -20,7 +20,7 @@
 
             <h5>Based on recent project performance, where would you pin down your Capability Maturity level?</h5>
             <br>
-            <div align="center"><img class="img-fluid" src="/images/dunningkrugereffectonprojectprocesseswithnopin200.png"> </div>
+            <div align="center"><img class="img-fluid" src="/images/dunningkrugeradjusted.jpg"> </div>
             <br>
             <img alt="" id="pin"height="144" src="/images/pinlarge.png" width="152">&nbsp;&nbsp;
             <h6> Using your mouse "drag" the pin to the image above and move it along the red line<br>
@@ -122,7 +122,9 @@
 {{--            </div>--}}
 {{--            <h5>Based on recent project performance, where would you pin down your Capability Maturity level?</h5>--}}
             <br>
-            <div align="center"><img class="img-fluid" src="/images/dunningkrugereffectonprojectprocesseswithnopin200.png"> </div>
+            <div align="center">
+            <div align="center"><img class="img-fluid" src="/images/dunningkrugeradjusted.jpg"> </div>
+    </div>
             <br>
             <img alt="" id="pin" height="144" src="/images/pinlarge.png" width="152">&nbsp;&nbsp;
 {{--            <h6> Using your mouse "drag" the pin to the image above and move it along the red line<br>--}}

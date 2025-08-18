@@ -362,7 +362,19 @@ Route::middleware(['auth'])->group(function (): void {
     });
 });
 
-///These routes are just testing out livewire
+///These routes are for testing out livewire
+///
+Route::get('/csstraining', \App\Livewire\CSSTraining::class)->name('csstraining');  //the route: /csstraining
+Route::get('/csstraining/{file}', function ($file)  //view-source:http://127.0.0.1:8000/csstraining/Advanced-CSS-Concepts.html
+{
+    $path = public_path('csstraining/' . $file);
+    if (file_exists($path)) {
+        return response()->file($path);
+    } else {
+        abort(404);
+    }
+})->where('file', '.*');
+
 Route::get('/calculator', \App\Livewire\Calculator::class)->name('calculator');
 Route::get('/todo-list', \App\Livewire\TodoList::class)->name('todo-list');
 Route::get('/cascading-dropdown', \App\Livewire\CascadingDropdown::class)->name('cascading-dropdown');
