@@ -9,6 +9,8 @@ class TodoList extends Component
 {
     public $todos;
     public string $todoText = '';
+    public $editingTodoId;
+    public string $editingTodoText = '';
 
     public function mount()
     {
@@ -26,7 +28,6 @@ class TodoList extends Component
         $todo->todo = $this->todoText;
         $todo->completed = false;
         $todo->save();
-
         $this->todoText = '';
         $this->selectTodos();
     }
@@ -50,6 +51,33 @@ class TodoList extends Component
         }
         $todo->delete();
         $this->selectTodos();
+    }
+
+    public function editTodo($id)
+    {
+        $todo = TodoItem::where('id', $id)->first();
+        if (!$todo) {
+            return;
+        }
+        $this->editingTodoId = $id;
+        $this->editingTodoText = $todo->todo;
+    }
+
+    public function saveEditedTodo()
+    {
+        $todo = TodoItem::where('id', $this->editingTodoId)->first();
+        if (!$todo) {
+            return;
+        }
+        $todo->todo = $this->editingTodoText;
+        $todo->save();
+        $this->editingTodoId = null;
+        $this->selectTodos();
+    }
+
+    public function cancelEditing()
+    {
+        $this->editingTodoId = null;
     }
 
     public function selectTodos()

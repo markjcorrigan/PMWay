@@ -9,7 +9,7 @@
         </p>
 
 
-        <h1>You do not have the right permissions to enter here!</h1>
+        <h1>You have insufficient permissions to enter here!</h1>
         <p>
 
                 {{--		on this web)</small></p>

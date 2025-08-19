@@ -6,7 +6,7 @@ use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
-class CSSTraining extends Component
+class TWCSSTraining extends Component
 {
 
     public function mount(): void

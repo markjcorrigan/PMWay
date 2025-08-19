@@ -12,7 +12,7 @@
             <p><a href="{{ route('home') }}" class="nav-link" style="height: 40px; width: 40px;">
 
                     <x-app-logo-icon /></a><br>
-           <small>PMWay has pre-defined routes (url's ) on a routing table.<br>A 404 page is a routing error or route that does not exist</small></div>
+           <small>PMWay has pre-defined routes (url's ) on a routing table.<br>A 404 "page not found" is a routing error or route that does not exist</small></div>
                 {{--		on this web)</small></p>
                 {{--  		<p><img alt="404 error" class="img-fluid"  src="/images/404.png" ><br>--}}
 {{--		 PMWay has pre-defined routes (page links) on a routing table.<br>If you --}}

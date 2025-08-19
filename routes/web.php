@@ -364,10 +364,10 @@ Route::middleware(['auth'])->group(function (): void {
 
 ///These routes are for testing out livewire
 ///
-Route::get('/csstraining', \App\Livewire\CSSTraining::class)->name('csstraining');  //the route: /csstraining
-Route::get('/csstraining/{file}', function ($file)  //view-source:http://127.0.0.1:8000/csstraining/Advanced-CSS-Concepts.html
+Route::get('/twcsstraining', \App\Livewire\TWCSSTraining::class)->name('twcsstraining');  //the route: /csstraining
+Route::get('/twcsstraining/{file}', function ($file)  //view-source:http://127.0.0.1:8000/csstraining/Advanced-CSS-Concepts.html
 {
-    $path = public_path('csstraining/' . $file);
+    $path = public_path('twcsstraining/' . $file);
     if (file_exists($path)) {
         return response()->file($path);
     } else {

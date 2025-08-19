@@ -2,64 +2,54 @@
 
 namespace App\Livewire;
 
-use App\Models\Product;
 use Livewire\Component;
-use Livewire\WithPagination;
+use App\Models\Product;
 use Livewire\WithFileUploads;
 
-class ProductsSearch extends Component
+class ProductForm extends Component
 {
-    use WithPagination;
     use WithFileUploads;
 
-    public $productDeletedMessage = '';
 
-    public $search = '';
-
-    public $productSavedMessage = '';
     public $productId;
     public $title;
     public $image;
     public $price;
-    public $isOpen = false;
 
     protected $rules = [
         'title' => 'required',
-        'image' => 'image|mimes:jpg,jpeg,png|max:2048',
         'price' => 'required',
+        'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
     ];
 
 
     public function render()
     {
-        $products = Product::where('title', 'like', '%' . $this->search . '%')
-            ->orWhere('price', 'like', '%' . $this->search . '%')
-            ->paginate(5);
-        return view('livewire.products-search', ['products' => $products]);
+        return view('livewire.product-form');
     }
-
 
     public function save()
     {
         $this->validate();
+
         if ($this->productId) {
             $product = Product::find($this->productId);
-            if ($this->image) {
-                $product->image = $this->image->store('products', 'public');
-            }
             $product->update([
                 'title' => $this->title,
                 'price' => $this->price,
             ]);
+            if ($this->image) {
+                $product->image = $this->image->store('products', 'public');
+                $product->save();
+            }
         } else {
             $product = Product::create([
                 'title' => $this->title,
                 'price' => $this->price,
                 'image' => $this->image->store('products', 'public'),
-            ]);
+                ]);
         }
-        $this->productSavedMessage = 'Product saved successfully.';
-        $this->dispatch('closeModal');
+
         $this->resetInputFields();
     }
 
@@ -68,32 +58,15 @@ class ProductsSearch extends Component
         $product = Product::find($id);
         $this->productId = $id;
         $this->title = $product->title;
+        $this->image = null;
         $this->price = $product->price;
-        $this->isOpen = true;
     }
-
 
     public function resetInputFields()
     {
         $this->title = '';
-        $this->image = '';
+        $this->image = null;
         $this->price = '';
         $this->productId = null;
-        $this->productSavedMessage = '';
     }
-
-    public function create()
-    {
-        $this->isOpen = true;
-    }
-
-    public function delete($id)
-    {
-        Product::find($id)->delete();
-        $this->productDeletedMessage = 'Product deleted successfully.';
-        $this->dispatch('showMessage');
-    }
-
-
 }
-

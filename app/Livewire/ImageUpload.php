@@ -15,6 +15,8 @@ class ImageUpload extends Component
      */
     public $image = [];
 
+
+
     public function save()
     {
         $this->validate([
@@ -22,22 +24,26 @@ class ImageUpload extends Component
         ]);
 
         foreach ($this->image as $image) {
-            $image->store('public');
-            // $image->storeAs('public', $image->getClientOriginalName());
+            $path = $image->getRealPath();
+            $filename = $image->getClientOriginalName();
+            Storage::disk('public')->put('images/' . $filename, file_get_contents($path));
         }
+
+        $this->image = [];
     }
+
+
 
     public function render()
     {
         return view('livewire.image-upload', [
-            'images' => collect(Storage::files('public'))
-                ->filter(function($file){
-                    return in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), ['png', 'jpg', 'jpeg', 'gif', 'webp']);
-                })
+            'images' => collect(Storage::disk('public')->files('images'))
                 ->map(function ($file) {
-                return Storage::url($file);
-            })
+                    return asset('storage/' . $file);
+                })
         ]);
     }
+
+
 
 }
